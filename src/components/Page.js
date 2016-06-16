@@ -11,39 +11,67 @@ export default class Page extends React.Component {
 
 	render() {
 
-		const linkPoints = [
+		const linkPointsRed = [
 			{
-				color: 'gray',
-				top: '80%',
-				left: '42%',
+				color: '#8FE0FF',
+				top: '26%',
+				left: '40%',
 				link: 'http://www.myntra.com/'
 			},
 			{
-				color: 'red',
+				color: '#BF01FD',
 				top: '55%',
 				left: '71%',
 				link: 'http://www.myntra.com/'
 			},
 			{
+				color: '#3B3E2D',
+				top: '80%',
+				left: '42%',
+				link: 'http://www.myntra.com/'
+			},
+		];
+
+		const linkPointsBlue = [
+			{
+				color: '#FF3333',
+				top: '18%',
+				left: '58%',
+				link: 'http://www.myntra.com/'
+			},
+			{
 				color: 'black',
-				top: '26%',
-				left: '40%',
+				top: '58%',
+				left: '32%',
+				link: 'http://www.myntra.com/'
+			},
+			{
+				color: '#F325C6',
+				top: '73%',
+				left: '64%',
 				link: 'http://www.myntra.com/'
 			},
 		];
 
 		return(
 			<div>
+
+				<div style={{padding: '16px 8px'}}>Test page for the image linker</div>
+				<hr />
+
+				<div style={{padding: 8, textAlign: 'center'}}>Look 1</div>
 			
-				Hello world!
 				<ImageLinker
 					image="http://assets.myntassets.com/v1465895191/SIS/image-linker/Red.jpg"
-					points={linkPoints}
+					points={linkPointsRed}
 				/>
 
+				<hr />
+				<div style={{padding: 8, textAlign: 'center'}}>Look 2</div>
+
 				<ImageLinker
-					image="http://assets.myntassets.com/v1465895191/SIS/image-linker/Red.jpg"
-					points={linkPoints}
+					image="http://assets.myntassets.com/v1466074012/SIS/Blue.jpg"
+					points={linkPointsBlue}
 				/>
 			</div>			
 		);

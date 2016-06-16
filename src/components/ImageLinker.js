@@ -5,6 +5,14 @@ import '../css/animation.css';
 
 export default class ImageLinker extends React.Component {
 
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			showLinks: false
+		}
+	}
+
 	createLinkPoints() {
 
 		const points = this.props.points.map((point,key) => {
@@ -38,6 +46,12 @@ export default class ImageLinker extends React.Component {
 		return points;
 	}
 
+	handleShowClick() {
+		this.setState({
+			showLinks: !this.state.showLinks
+		});
+	}
+
 
 	render() {
 
@@ -48,14 +62,22 @@ export default class ImageLinker extends React.Component {
 			img: {
 				display: 'block',
 				maxWidth: '100%',
+			},
+			showBtn: {
+				color:'white',
+				padding: '16px 8px',
+				backgroundColor: (this.state.showLinks) ? 'tomato': 'limegreen'
 			}
 		}
 
 		return(
-			<div style={css.container}>
-				<img style={css.img} src={this.props.image} />
-				{this.createLinkPoints()}
-			</div>			
+			<div>
+				<div style={css.container}>
+					<img style={css.img} src={this.props.image} />
+					{(this.state.showLinks)?this.createLinkPoints(): ''}
+				</div>
+				<div style={css.showBtn} onClick={this.handleShowClick.bind(this)}>{(this.state.showLinks) ? 'Hide Links': 'Show Links'} </div>
+			</div>
 		);
 
 	}
