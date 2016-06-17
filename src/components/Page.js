@@ -51,13 +51,13 @@ export default class Page extends React.Component {
 				<div style={css.mainTitle}><span style={{fontSize: 25, textTransform: 'uppercase', letterSpacing: 1}}>College trends</span><br /> you cannot miss this season</div>
 				<div style={css.copy}>Whether it's a jacket or a scarf, small changes make a big difference when it comes to getting ready for college. Make sure you put your best foot forward by incorporating these trendy layering options.</div>
 				
-				<div style={css.title}>Preppy casuals</div>
+				<div style={css.title}>Contemporary classics</div>
 				<Layering imgData={layeringData.look1} />
-				<a target="_blank" style={css.shop} href="http://www.myntra.com/layering-denim-jacket-for-men?SRC=Radium">Shop collection</a>
+				<a target="_blank" style={css.shop} href="http://www.myntra.com/layering-kurta-for-women?SRC=Radium">Shop collection</a>
 
-				<div style={css.title}>Colour burst</div>
+				<div style={css.title}>'90s recall</div>
 				<Layering imgData={layeringData.look2} />
-				<a target="_blank" style={css.shop} href="http://www.myntra.com/layering-red-jacket-for-men?SRC=Radium">Shop collection</a>
+				<a target="_blank" style={css.shop} href="http://www.myntra.com/layering-denim-jacket-for-women?SRC=Radium">Shop collection</a>
 			</div>			
 		);
 
