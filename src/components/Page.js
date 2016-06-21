@@ -61,7 +61,7 @@ export default class Page extends React.Component {
 
 				<img style={css.img} src="http://assets.myntassets.com/v1466499961/SIS/beauty-makeup/sun-kissed-bronzer-min.jpg" />
 				<div style={css.text}>Fake that perfect tan with a the season’s must-have vanity item - the sun-kissed bronzer!</div>
-				<a style={_.assignIn({},css.shop,{color: '#4E4131'})} href="#?SRC=Radium" target="_blank">Try now</a>
+				<a style={_.assignIn({},css.shop,{color: '#4E4131'})} href="http://www.myntra.com/bronzer?SRC=Radium" target="_blank">Try now</a>
 				<div style={_.assignIn({},css.hr, {borderColor: '#4E4131'})} />
 			</div>			
 		);
