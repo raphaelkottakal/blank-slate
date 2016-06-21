@@ -104,14 +104,14 @@ export default class Layering extends React.Component {
 
 			look: {
 				display: 'block',
-				width: '66%'
+				width: '71.5%'
 			},
 
 			switches: {
 				position: 'absolute',
 				top: 0,
 				right: 0,
-				width: '33%'
+				width: '28%'
 			},
 
 			switch: {
@@ -124,7 +124,7 @@ export default class Layering extends React.Component {
 				left: 8,
 				width: 16,
 				height: 16,
-				lineHeight: '16px',
+				lineHeight: '14px',
 				textAlign: 'center',
 				backgroundColor: '#000',
 				color: '#fff',
