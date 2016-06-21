@@ -124,7 +124,7 @@ export default class Layering extends React.Component {
 				left: 8,
 				width: 16,
 				height: 16,
-				lineHeight: '14px',
+				lineHeight: '15px',
 				textAlign: 'center',
 				backgroundColor: '#000',
 				color: '#fff',
