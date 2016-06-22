@@ -1,22 +1,50 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
 import Slider from 'react-slick';
+
 import 'normalize.css/normalize.css';
 import '../css/main.css';
-import SliderGroup from './slide-group';
-import sliderGroupData from '../data/slider-group';
 
-export default class Page extends React.Component {
+import Textonimage from './text-on-image'
+import Reveal from './reveal';
+import Title from './title';
+
+import Slideimage from './slideimage';
+import Popup from './popup';
+
+
+import FlipCard from './flip-card';
+import sliderGroupData from '../data/slider-group';
+import SliderGroup from './slide-group';
+
+import ShowMore from './showMore';
+import ImageChild from './imageChild';
+
+import Example from './videoTest';
+
+
+export default class Archive extends React.Component {
 
 	getContainerStyles() {
 		return {
 			minHeight: window.innerHeight,
+			// backgroundColor: 'tomato',
 			position: 'absolute',
 			top: 0,
 			left: 0,
 			width: '100%',
 		}
 	}
+
+
+	// getTextPositionStyles() {
+	// 	return {
+
+	// 		position: 'absolute',
+	// 		top: 10,
+	// 		left: 50,
+	// 		width: '100%',
+	// 	}
+	// }
 
 
 	render() {
@@ -44,7 +72,7 @@ export default class Page extends React.Component {
 					<SliderGroup data={sliderGroupData}></SliderGroup>
 
 				</div>
-				
+				<div><Example></Example></div>
 			</div>
 
 		);
