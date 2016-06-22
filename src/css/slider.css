@@ -13,3 +13,6 @@
 	/*bottom: 5px;*/
 margin-top:10px;
 }
+.slick-dots li{
+	width: 16px;
+}

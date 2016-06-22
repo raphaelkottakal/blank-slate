@@ -23,7 +23,6 @@ export default class SlideGroup extends React.Component {
 
 	createSliders(object) {
 
-		console.log(this);
 		let settings = {
 			dots: true,
 			infinite: true,
@@ -56,17 +55,22 @@ export default class SlideGroup extends React.Component {
 					<Slider {...settings}>
 							{this.createSlide(sliders.slides)}
 					</Slider>
-					<a href={'http://www.myntra.com/women-hairstyling?SRC=Radium'} target="_blank" 
-					style={{textAlign:'center', 
-					backgroundColor: '#A8B5DF', 
-					textDecoration:'none',
-					padding: '3px 14px',  
-					textTransform:'uppercase', 
-					fontSize:'14px',
-					letterSpacing:'3px',
-					top: '-27px',
-					color:'#fff',
-					position:'relative' }}>
+					<a href={sliders.link} target="_blank" 
+					style={{color:'black',
+							textAlign: 'center',
+							textDecoration: 'none',
+							margin: '0 auto',
+							display: 'block',
+							backgroundColor: '#F9C7CC',
+							padding: '2px',
+							margin: '0 auto',
+							width: '115px',
+				    		fontSize: '14px',
+				    		letterSpacing: '3px',
+				    		marginBottom: '25px',
+				    		position: 'relative',
+				    		textTransform: 'uppercase',
+				    		top: '-26px' }}>
 					Try now</a>
 				</div>
 			);
