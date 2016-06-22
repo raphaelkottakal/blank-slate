@@ -22,3 +22,9 @@ html {
 .slick-slider {
     margin-bottom: 50px;
 }
+.slick-dots{
+	bottom: -89px;
+}
+.slick-dots li{
+	width:16px;
+}
