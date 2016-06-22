@@ -23,7 +23,7 @@ export default class SlideGroup extends React.Component {
 
 	createSliders(object) {
 
-		console.log(this);
+		// console.log(this);
 		let settings = {
 			dots: true,
 			infinite: true,

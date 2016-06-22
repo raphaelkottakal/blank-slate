@@ -1,6 +1,4 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
-import Slider from 'react-slick';
 import 'normalize.css/normalize.css';
 import '../css/main.css';
 import SliderGroup from './slide-group';
@@ -40,7 +38,7 @@ export default class Page extends React.Component {
 			<div style={this.getContainerStyles()}>
 
 				<img src={'http://assets.myntassets.com/v1466597545/SIS/beauty-hair-styling-guide/hairstyle-guide.jpg'} style={{width:'100%'}}/>
-				<div  style={{margin:'3% 2% 0% 2%', color:'#494949'}}>Now every single day can be a good hair day. Here’s an easy to follow guide on how to master a few popular hairstyles at home.</div>
+				<div  style={{margin:'1% 2% 0% 2%', color:'rgb(112, 112, 112)'}}>Now every single day can be a good hair day. Here’s an easy to follow guide on how to master a few popular hairstyles at home.</div>
 
 				<div>
 
