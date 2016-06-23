@@ -2,10 +2,12 @@ import React from 'react';
 // import ReactDOM from 'react-dom';
 
 import Slider from 'react-slick';
+
 import 'normalize.css/normalize.css';
 import '../css/main.css';
-import SliderGroup from './slide-group';
 import sliderGroupData from '../data/slider-group';
+
+import Carousel from './carousel';
 
 export default class Page extends React.Component {
 
@@ -19,20 +21,57 @@ export default class Page extends React.Component {
 		}
 	}
 
+	renderCarousel() {
+		const carousels = sliderGroupData.map((carousel, i) => {
+			const linkStyle = {
+				color:'black',
+				textAlign: 'center',
+				textDecoration: 'none',
+				margin: '0 auto',
+				display: 'block',
+				backgroundColor: '#F9C7CC',
+				padding: '2px',
+				margin: '0 auto',
+				width: '115px',
+	    		fontSize: '14px',
+	    		letterSpacing: '3px',
+	    		marginBottom: '25px',
+	    		position: 'relative',
+	    		textTransform: 'uppercase',
+	    		top: '-26px'
+			}
+			return (
+				<div key={i}>
+					<img style={{width: '100%',height:'auto'}} src={carousel.img} />
+					<Carousel initialSlideHeight={400}>
+						{this.renderSlides(carousel.slides)}
+					</Carousel>
+					<a href={carousel.link} target="_blank" style={linkStyle}>Try now</a>
+				</div>
+			);
+		});
+
+		return carousels;
+	}
+
+		
+	renderSlides(slidesArray) {
+		const slides = slidesArray.map((slide, i) => {
+			return (
+				<div key={i}>
+					<img style={{width: '100%',height:'auto'}} src={slide.img} />
+					<div style={{padding: '0 8px', textAlign: 'center'}}>{slide.text}</div>
+				</div>
+			);
+		});
+
+		return slides;
+	}
+
 
 	render() {
 
-		var settings = {
-			dots: true,
-			infinite: true,
-			speed: 250,
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			autoplay: true,
-			autoplaySpeed: 3000,
-			centerMode: true,
-			arrows: true
-		} , style={
+		var style={
 			color: '#494949',
 			padding: '0 5px',
 			fontFamily: 'Source+Sans+Pro',
@@ -41,12 +80,11 @@ export default class Page extends React.Component {
 
 		return(
 			<div style={this.getContainerStyles()}>
+
 		        <img src="http://assets.myntassets.com/v1466595169/SIS/beauty-store-eyes/eye-makeup.jpg" style={{ width: '100%', height: 'auto'}}/>
 				<p style={style}>Want to master popular eye make-up trends? Here’s an easy to follow guide that takes you through some popular styles.</p>
 				<div>
-
-					<SliderGroup data={sliderGroupData}></SliderGroup>
-
+					{this.renderCarousel()}
 				</div>
 				
 			</div>
