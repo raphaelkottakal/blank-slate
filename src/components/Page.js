@@ -53,11 +53,11 @@ export default class Page extends React.Component {
 				
 				<div style={css.title}>Preppy casuals</div>
 				<Layering imgData={layeringData.look1} />
-				<a target="_blank" style={css.shop} href="http://www.myntra.com/preppy-casuals?SRC=Radium">Shop collection</a>
+				<a target="_blank" style={css.shop} href="http://www.myntra.com/preppy-casuals?SRC=Radium">Shop look</a>
 
 				<div style={css.title}>Colour burst</div>
 				<Layering imgData={layeringData.look2} />
-				<a target="_blank" style={css.shop} href="http://www.myntra.com/colour-burst?SRC=Radium">Shop collection</a>
+				<a target="_blank" style={css.shop} href="http://www.myntra.com/colour-burst?SRC=Radium">Shop look</a>
 			</div>			
 		);
 
