@@ -21,12 +21,12 @@ export default class Page extends React.Component {
 	renderCarousel() {
 		const carousels = sliderGroupData.map((carousel, i) => {
 			const linkStyle = {
-				color:'black',
+				color:'#fff',
 				textAlign: 'center',
 				textDecoration: 'none',
 				margin: '0 auto',
 				display: 'block',
-				backgroundColor: '#F9C7CC',
+				backgroundColor: 'rgb(179, 192, 234)',
 				padding: '2px',
 				margin: '0 auto',
 				width: '115px',
@@ -77,8 +77,8 @@ export default class Page extends React.Component {
 		return(
 			<div style={this.getContainerStyles()}>
 
-		        <img src="http://assets.myntassets.com/v1466595169/SIS/beauty-store-eyes/eye-makeup.jpg" style={{ width: '100%', height: 'auto'}}/>
-				<p style={style}>Want to master popular eye make-up trends? Here’s an easy to follow guide that takes you through some popular styles.</p>
+		        <img src="http://assets.myntassets.com/v1466597545/SIS/beauty-hair-styling-guide/hairstyle-guide.jpg" style={{ width: '100%', height: 'auto'}}/>
+				<p style={style}>Now every single day can be a good hair day. Here’s an easy to follow guide on how to master a few popular hairstyles at home.</p>
 				<div>
 					{this.renderCarousel()}
 				</div>

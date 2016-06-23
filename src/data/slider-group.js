@@ -1,227 +1,120 @@
 export default [
 	{
-		img: 'http://assets.myntassets.com/v1466500057/SIS/beauty-store-eyes/Beauty_store-steps-53-min.jpg',
+		img: 'http://assets.myntassets.com/v1466596106/SIS/beauty-hair-styling-guide/loose-curls.jpg',
 		sliderSection: true,
-		link: 'http://www.myntra.com/steps-to-ace-smokey-eyes?SRC=Radium',
+		link: 'http://www.myntra.com/women-hairstyling?SRC=Radium',
 		slides: [
-
 			{
-        		img: 'http://assets.myntassets.com/v1466577756/SIS/beauty-store-eyes/Smokey-eye-step-1-min.jpg',
-        		text:'Moisturise your eyelids'
+				img: 'http://assets.myntassets.com/v1466502160/SIS/beauty-hair-styling-guide/Beauty_store-steps-08.jpg',
+				text:'Blow dry your freshly washed hair till it is relatively straight'
 			},
-
 			{
-        		img: 'http://assets.myntassets.com/v1466577756/SIS/beauty-store-eyes/Smokey-eye-step-2-min.jpg',
-        		text:'Apply primer or foundation'
+				img: 'http://assets.myntassets.com/v1466502160/SIS/beauty-hair-styling-guide/Beauty_store-steps-09.jpg',				
+				text:'Apply a heat-protective serum all over'
 			},
-
 			{
-        		img: 'http://assets.myntassets.com/v1466577756/SIS/beauty-store-eyes/Smokey-eye-step-3-min.jpg',
-        		text:'Apply charcoal gray powder just above the crease of the lid'
+				img: 'http://assets.myntassets.com/v1466502160/SIS/beauty-hair-styling-guide/Beauty_store-steps-10.jpg',				
+				text:'Taking medium-sized sections, start curling your hair. Make sure to move the curling rod or iron vertically making small, tight curls'
 			},
-
 			{
-        		img: 'http://assets.myntassets.com/v1466577756/SIS/beauty-store-eyes/Smokey-eye-step-4-min.jpg',
-        		text:'Trace your upper lash line with a black pencil'
+				img: 'http://assets.myntassets.com/v1466502160/SIS/beauty-hair-styling-guide/Beauty_store-steps-11.jpg',				
+				text:'Once done allow the curls to set for about five minutes'
 			},
-
 			{
-        		img: 'http://assets.myntassets.com/v1466577756/SIS/beauty-store-eyes/Smokey-eye-step-5-min.jpg',
-        		text:'Gently smudge using your fingertips'
+				img: 'http://assets.myntassets.com/v1466502160/SIS/beauty-hair-styling-guide/Beauty_store-steps-12.jpg',				
+				text:'Use your fingers to gently comb through the curls, depending on whether you want loose curls or beach waves'
 			},
-
 			{
-        		img: 'http://assets.myntassets.com/v1466577757/SIS/beauty-store-eyes/Smokey-eye-step-6-min.jpg',
-        		text:'Sweep gunmetal shade on your lower lash line'
+				img: 'http://assets.myntassets.com/v1466502160/SIS/beauty-hair-styling-guide/Beauty_store-steps-13.jpg',				
+				text:'Ta-da!'
 			},
-
-			{
-        		img: 'http://assets.myntassets.com/v1466577757/SIS/beauty-store-eyes/Smokey-eye-step-7-min.jpg',
-        		text:'Apply silver powder on to the inner corner of the eyes'
-			},
-
-			{
-        		img: 'http://assets.myntassets.com/v1466577757/SIS/beauty-store-eyes/Smokey-eye-step-8-min.jpg',
-        		text:'Apply mascara'
-			},
-
-			{
-        		img: 'http://assets.myntassets.com/v1466576696/SIS/beauty-store-eyes/Smokey-eye-step-9.jpg',
-        		text:'Wasn’t that easy?'
-			},
-
-			{
-        		img: 'http://assets.myntassets.com/v1466576696/SIS/beauty-store-eyes/Smokey-eye-step-10.jpg',
-        		text:'You’re all set to paint the town red!'
-			}			
 		]
 	},
 
 	{
-		img: 'http://assets.myntassets.com/v1466504514/SIS/beauty-store-eyes/Beauty_store-steps-title.jpg',
+		img: 'http://assets.myntassets.com/v1466596107/SIS/beauty-hair-styling-guide/easy-chignon.jpg',
 		sliderSection: true,
-		link: 'http://www.myntra.com/steps-to-get-electric-blue-eyes?SRC=Radium',
+		link: 'http://www.myntra.com/women-hairstyling?SRC=Radium',
 		slides: [
 			{
-        		img: 'http://assets.myntassets.com/v1466504514/SIS/beauty-store-eyes/Beauty_store-steps-1.jpg',
-        		text: 'Prep your eyes by applying moisturiser'
+				img: 'http://assets.myntassets.com/v1466505490/SIS/beauty-hair-styling-guide/Beauty_store-steps-28.jpg',
+				text:'Apply heat-protective cream or hair serum to freshly washed hair'
+			},
+			{
+				img: 'http://assets.myntassets.com/v1466505490/SIS/beauty-hair-styling-guide/Beauty_store-steps-29.jpg',				
+				text:'Use a hair dryer to dry your hair'
+			},
+			{
+				img: 'http://assets.myntassets.com/v1466505490/SIS/beauty-hair-styling-guide/Beauty_store-steps-30.jpg',				
+				text:'Next, straighten your hair using a hair iron'
+			},
+			{
+				img: 'http://assets.myntassets.com/v1466505490/SIS/beauty-hair-styling-guide/Beauty_store-steps-31.jpg',				
+				text:'Section out the front hair on both sides'
+			},
+			{
+				img: 'http://assets.myntassets.com/v1466505490/SIS/beauty-hair-styling-guide/Beauty_store-steps-32.jpg',				
+				text:'Now twist it and pin to the back, on either side'
+			},
+			{
+				img: 'http://assets.myntassets.com/v1466505490/SIS/beauty-hair-styling-guide/Beauty_store-steps-33.jpg',				
+				text:'Pull the rest of your hair into a ponytail'
+			},
+			{
+				img: 'http://assets.myntassets.com/v1466505491/SIS/beauty-hair-styling-guide/Beauty_store-steps-34.jpg',				
+				text:'Twist the ponytail and loop it through the top'
+			},
+			{
+				img: 'http://assets.myntassets.com/v1466505491/SIS/beauty-hair-styling-guide/Beauty_store-steps-35.jpg',				
+				text:'Fasten it at the nape of your neck in a small bun'
+			},
+			{
+				img: 'http://assets.myntassets.com/v1466505491/SIS/beauty-hair-styling-guide/Beauty_store-steps-36.jpg',				
+				text:'Pin any stray hair'
+			},
+			{
+				img: 'http://assets.myntassets.com/v1466505491/SIS/beauty-hair-styling-guide/Beauty_store-steps-37.jpg',				
+				text:'And you’re done!'
 			},
 
-			{
-        		img: 'http://assets.myntassets.com/v1466504514/SIS/beauty-store-eyes/Beauty_store-steps-2.jpg',
-        		text: 'Apply primer or foundation'
-			},
-			
-			{
-        		img: 'http://assets.myntassets.com/v1466504514/SIS/beauty-store-eyes/Beauty_store-steps-3.jpg',
-        		text: 'Use a medium-sized brush to apply a light blue shade all over the lid'
-			},
-			
-			{
-        		img: 'http://assets.myntassets.com/v1466504514/SIS/beauty-store-eyes/Beauty_store-steps-4.jpg',
-        		text: 'Use a darker shade of blue on the crease and blend well'
-			},
-			
-			{
-        		img: 'http://assets.myntassets.com/v1466504514/SIS/beauty-store-eyes/Beauty_store-steps-5.jpg',
-        		text: 'Trace your lash line with navy blue or indigo eyeliner'
-			},
-			
-			{
-        		img: 'http://assets.myntassets.com/v1466504514/SIS/beauty-store-eyes/Beauty_store-steps-6.jpg',
-        		text: 'Apply mascara for a dramatic effect'
-			},
-			
-			{		        	
-        		img: 'http://assets.myntassets.com/v1466504515/SIS/beauty-store-eyes/Beauty_store-steps-7.jpg',
-        		text: 'Voila!'
-        	},
-			
-			{
-        		img: 'http://assets.myntassets.com/v1466504515/SIS/beauty-store-eyes/Beauty_store-steps-8.jpg',
-				text: 'You’re all set'
-			}
 		]	
 	},
 
 	{
-		img: 'http://assets.myntassets.com/v1466505191/SIS/beauty-store-eyes/Beauty_store-steps-55-min.jpg',
+		img: 'http://assets.myntassets.com/v1466596109/SIS/beauty-hair-styling-guide/bombsheel-blowout.jpg',
 		sliderSection: true,
-		link: 'http://www.myntra.com/steps-to-nail-the-cat-eye?SRC=Radium',
+		link: 'http://www.myntra.com/women-hairstyling?SRC=Radium',
 		slides: [
 			{
-        		img: 'http://assets.myntassets.com/v1466505190/SIS/beauty-store-eyes/Beauty_store-steps-18-min.jpg',
-        		text: 'Apply some moisturiser all over your eyelids'
+				img: 'http://assets.myntassets.com/v1466506147/SIS/beauty-hair-styling-guide/Beauty_store-steps-46.jpg',
+				text:'Apply heat-protective cream or hair serum to freshly washed hair and remove all tangles'
+			},
+			{
+				img: 'http://assets.myntassets.com/v1466506147/SIS/beauty-hair-styling-guide/Beauty_store-steps-47.jpg',				
+				text:'Pin up the top section and start working from the bottom layers'
+			},
+			{
+				img: 'http://assets.myntassets.com/v1466506147/SIS/beauty-hair-styling-guide/Beauty_store-steps-48.jpg',				
+				text:'Using a medium-sized round brush, hold your hair from the roots. Move the blow dryer over the brush, from roots to tips in an outward sweeping motion'
+			},
+			{
+				img: 'http://assets.myntassets.com/v1466506147/SIS/beauty-hair-styling-guide/Beauty_store-steps-49.jpg',				
+				text:'Once done, take a hair iron and smoothen out your hair, avoiding the tips'
+			},
+			{
+				img: 'http://assets.myntassets.com/v1466506147/SIS/beauty-hair-styling-guide/Beauty_store-steps-50.jpg',				
+				text:'Finally, put your head down letting all your hair fall to the front.'
+			},
+			{
+				img: 'http://assets.myntassets.com/v1466506147/SIS/beauty-hair-styling-guide/Beauty_store-steps-51.jpg',				
+				text:'Gently tousle with your fingers'
+			},
+			{
+				img: 'http://assets.myntassets.com/v1466506148/SIS/beauty-hair-styling-guide/Beauty_store-steps-52.jpg',				
+				text:'And you’re ready!'
 			},
 
-			{
-        		img: 'http://assets.myntassets.com/v1466505190/SIS/beauty-store-eyes/Beauty_store-steps-17-min.jpg',
-        		text: 'Follow up with some primer'
-			},
-			
-			{
-        		img: 'http://assets.myntassets.com/v1466505190/SIS/beauty-store-eyes/Beauty_store-steps-19-min.jpg',
-        		text: 'Put on some eyeshadow in a shade closest to your skin tone'
-			},
-			
-			{
-        		img: 'http://assets.myntassets.com/v1466505189/SIS/beauty-store-eyes/Beauty_store-steps-20-min.jpg',
-        		text: 'Take your eyeliner and make a tiny dot at the corner of each eyelid'
-			},
-			
-			{
-        		img: 'http://assets.myntassets.com/v1466505190/SIS/beauty-store-eyes/Beauty_store-steps-21-min.jpg',
-        		text: 'Draw a thin line connecting this dot the end of your eyelid'
-			},
-			
-			{
-        		img: 'http://assets.myntassets.com/v1466505190/SIS/beauty-store-eyes/Beauty_store-steps-22-min.jpg',
-        		text: 'Draw another line to connect the dot to the middle of your eyelid'
-			},
-			
-			{		        	
-        		img: 'http://assets.myntassets.com/v1466505191/SIS/beauty-store-eyes/Beauty_store-steps-23-min.jpg',
-        		text: 'Fill in this outline, making it as thick as you wish'
-			},		        	
-			
-			{		        	
-        		img: 'http://assets.myntassets.com/v1466505191/SIS/beauty-store-eyes/Beauty_store-steps-24-min.jpg',
-				text: 'Clean up any smudges using an earbud dipped in make-up remover'
-			},
 
-			{		        	
-        		img: 'http://assets.myntassets.com/v1466505192/SIS/beauty-store-eyes/Beauty_store-steps-25-min.jpg',
-        		text: 'Finish off with mascara for a dramatic effect'
-			},		        	
-			
-			{		        	
-        		img: 'http://assets.myntassets.com/v1466505192/SIS/beauty-store-eyes/Beauty_store-steps-26-min.jpg',
-				text: 'Ta-da!'
-			}
-		]
-	},
-
-
-
-	{
-		img: 'http://assets.myntassets.com/v1466506228/SIS/beauty-store-eyes/Beauty-store-steps-simple-day-title.jpg',
-		sliderSection: true,
-		link: 'http://www.myntra.com/steps-to-master-simple-day-look?SRC=Radium',
-		slides: [
-			{
-	    		img: 'http://assets.myntassets.com/v1466594239/SIS/beauty-store-eyes/simple-day-look-1.jpg',
-	    		text: 'Moisturise your eyelids'
-			},
-
-			{
-	    		img: 'http://assets.myntassets.com/v1466594239/SIS/beauty-store-eyes/simple-day-look-2.jpg',
-	    		text: 'Apply primer or foundation'
-			},
-			
-			{
-	    		img: 'http://assets.myntassets.com/v1466594239/SIS/beauty-store-eyes/simple-day-look-3.jpg',
-	    		text: 'Apply a matte eyeshadow in an earthy tone along the crease of your eyelid'
-			},
-			
-			{
-	    		img: 'http://assets.myntassets.com/v1466594239/SIS/beauty-store-eyes/simple-day-look-4.jpg',
-	    		text: 'Take a brown eyeliner pencil and draw a smooth line, as close to your eyelash line as possible'
-			},
-			
-			{
-	    		img: 'http://assets.myntassets.com/v1466594239/SIS/beauty-store-eyes/simple-day-look-5.jpg',
-	    		text: 'Follow this by applying a lighter shade of the same eyeshadow all over your eyelid'
-			},
-			
-			{
-	    		img: 'http://assets.myntassets.com/v1466594239/SIS/beauty-store-eyes/simple-day-look-6.jpg',
-	    		text: 'Apply mascara '
-			},
-			
-			{
-	    		img: 'http://assets.myntassets.com/v1466594240/SIS/beauty-store-eyes/simple-day-look-7.jpg',
-	    		text: 'Use a light eye pencil to line your lower lids and make your eyes look bigger and brighter.'
-			},
-			
-			{
-	    		img: 'http://assets.myntassets.com/v1466594240/SIS/beauty-store-eyes/simple-day-look-8.jpg',
-	    		text: 'Those with fairer skin can go for white, while dull gold works for those who are slightly dusky.'
-			},
-			
-			{
-	    		img: 'http://assets.myntassets.com/v1466594240/SIS/beauty-store-eyes/simple-day-look-9.jpg',
-	    		text: 'Finish by adding a touch of highlighter below your brow bone to give it more definition'
-			},
-			
-			{
-	    		img: 'http://assets.myntassets.com/v1466594240/SIS/beauty-store-eyes/simple-day-look-10.jpg',
-	    		text: 'And that’s all'
-			},
-			
-			{
-	    		img: 'http://assets.myntassets.com/v1466594240/SIS/beauty-store-eyes/simple-day-look-11.jpg',
-	    		text: 'Don’t you look pretty!'
-			}
 		]
 	},
 ];
