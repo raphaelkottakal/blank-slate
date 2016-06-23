@@ -42,6 +42,9 @@ export default class Page extends React.Component {
 				fontSize: 13,
 				letterSpacing: 2,
 				borderTop: '1px solid gray',
+			},
+			cta: {
+				textAlign: 'center'
 			}
 		}
 
@@ -50,7 +53,8 @@ export default class Page extends React.Component {
 
 				<div style={css.mainTitle}><span style={{fontSize: 25, textTransform: 'uppercase', letterSpacing: 1}}>College trends</span><br /> you cannot miss this season</div>
 				<div style={css.copy}>Whether it's a jacket or a scarf, small changes make a big difference when it comes to getting ready for college. Make sure you put your best foot forward by incorporating these trendy layering options.</div>
-				
+				<div style={css.cta}>Click to add or remove layers</div>
+
 				<div style={css.title}>Preppy casuals</div>
 				<Layering imgData={layeringData.look1} />
 				<a target="_blank" style={css.shop} href="http://www.myntra.com/preppy-casuals?SRC=Radium">Shop look</a>
