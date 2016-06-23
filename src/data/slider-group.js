@@ -32,7 +32,7 @@ export default [
 
 			{
         		img: 'http://assets.myntassets.com/v1466577757/SIS/beauty-store-eyes/Smokey-eye-step-6-min.jpg',
-        		text:'Sweep gunmetal shade on your lower lash line'
+        		text:'Sweep a gunmetal shade of eyeshadow on your lower lash line'
 			},
 
 			{
@@ -94,7 +94,7 @@ export default [
 			
 			{		        	
         		img: 'http://assets.myntassets.com/v1466504515/SIS/beauty-store-eyes/Beauty_store-steps-7.jpg',
-        		text: 'Voila!'
+        		text: 'Voilà!'
         	},
 			
 			{
