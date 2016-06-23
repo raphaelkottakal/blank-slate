@@ -10,7 +10,6 @@ import Layering from './Layering';
 
 export default class Page extends React.Component {
 
-
 	render() {
 
 		const css = {
