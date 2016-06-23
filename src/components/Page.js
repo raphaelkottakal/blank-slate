@@ -43,6 +43,10 @@ export default class Page extends React.Component {
 
 		return(
 			<div>
+
+				<img style={css.img} src="http://assets.myntassets.com/v1466662124/makeup-trends_ia1sed.jpg" />
+				<div style={{margin: '4px 1% 16px 1%'}}>Want to know the season’s hottest trends? Here are the ones you need to watch out for.</div>
+
 			
 				<img style={css.img} src="http://assets.myntassets.com/v1466499961/SIS/beauty-makeup/candy-apple-lips-min.jpg" />
 				<div style={css.text}>This irresistible shade of red is all the rage this season. This satin finish is perfect for date nights.</div>
