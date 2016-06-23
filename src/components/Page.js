@@ -1,5 +1,6 @@
 import React from 'react';
 // import ReactDOM from 'react-dom';
+
 import Slider from 'react-slick';
 import 'normalize.css/normalize.css';
 import '../css/main.css';
@@ -21,9 +22,6 @@ export default class Page extends React.Component {
 
 	render() {
 
-		// console.log('test', sliderGroupData);
-
-
 		var settings = {
 			dots: true,
 			infinite: true,
@@ -33,7 +31,7 @@ export default class Page extends React.Component {
 			autoplay: true,
 			autoplaySpeed: 3000,
 			centerMode: true,
-			arrows: false
+			arrows: true
 		} , style={
 			color: '#494949',
 			padding: '0 5px',
