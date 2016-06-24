@@ -12,8 +12,8 @@ export default {
 		},
 		switches: {
 			1: 'http://assets.myntassets.com/v1466495506/SIS/college-layering/new/men/denim-jacket.jpg',
-			2: 'http://assets.myntassets.com/v1466495507/SIS/college-layering/new/men/men-L1--product-bag.jpg',
-			3: 'http://assets.myntassets.com/v1466495507/SIS/college-layering/new/men/men-L1--product-sunglasses.jpg'
+			2: 'http://assets.myntassets.com/v1466495507/SIS/college-layering/new/men/men-L1--product-sunglasses.jpg',
+			3: 'http://assets.myntassets.com/v1466495507/SIS/college-layering/new/men/men-L1--product-bag.jpg',
 		}
 	},
 	look2: {
