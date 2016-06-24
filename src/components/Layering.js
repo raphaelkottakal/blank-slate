@@ -99,7 +99,7 @@ export default class Layering extends React.Component {
 			container: {
 				position: 'relative',
 				margin: '16px 0',
-				minHeight: 250,
+				minHeight: 350,
 			},
 
 			look: {
