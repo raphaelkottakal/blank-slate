@@ -34,24 +34,43 @@ export default class Page extends React.Component {
 		
 	}
 
+	handleTouch(e) {
+		console.log(e.touches[0].target);
+	}
+
 
 	render() {
 
 		const animation = {
-			color: this.state.one ? '#32CD32' : '#FF6347'
+			color: this.state.one ? '#FF6347': '#32CD32'
+		};
+
+		const footballAnimation = {
+			left: this.state.one ? 50 : '100%',
+			rotateZ: this.state.one ? 0 : 360,
+		};
+
+		const css = {
+			container: {
+				backgroundColor: 'limegreen',
+				position: 'relative',
+				padding: '16px 4px'
+			},
+			football: {
+				width: 50,
+				height: 'auto',
+				position: 'relative',
+				marginLeft: -50,
+			}
 		}
 
 		return(
-			<div>
-				<div>
-					
+			<div onTouchStart={this.handleTouch.bind(this)}>
+				<div onClick={this.handleToggle.bind(this,'one')} style={css.container}>
+					<VelocityComponent animation={footballAnimation} duration={1000}>
+						<img style={css.football} src="http://pngimg.com/upload/football_PNG1085.png" />
+					</VelocityComponent>
 				</div>
-				<VelocityComponent animation={animation} duration={500}>
-					<div>
-						<div>Hello world!</div>
-					</div>
-				</VelocityComponent>
-				<button onClick={this.handleToggle.bind(this,'one')}>Toggle</button>
 			</div>			
 		);
 
