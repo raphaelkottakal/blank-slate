@@ -32,6 +32,9 @@
     "file-loader": "~0.8.5",
     "style-loader": "~0.13.1",
     "css-loader": "~0.23.1",
-    "es6-promise": "~3.2.1"
+    "es6-promise": "~3.2.1",
+    "object-assign": "~4.1.0",
+    "exenv": "~1.2.1",
+    "kw-react-tween-state": "~0.1.5"
   }
 }
