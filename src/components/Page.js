@@ -7,11 +7,11 @@ import '../css/main.css';
 export default class Page extends React.Component {
 
 	handleClickShoes(event) {
-		ga('send', 'event', 'Radium', 'testPage', event.target.href);
+		ga('send', 'event', 'Radium', window.location.href, event.target.href);
 	}
 
 	handleClickPants(event) {
-		ga('send', 'event', 'Radium', 'testPage', event.target.href);
+		ga('send', 'event', 'Radium', window.location.href, event.target.href);
 	}
 
 
