@@ -10,6 +10,41 @@ import Carousel from './carousel';
 
 export default class Page extends React.Component {
 
+	constructor() {
+		super();
+		this.state = {
+			videoNotPlayedYet: true
+		}
+	}
+
+	handleYoutubePlay() {
+
+		// console.log(this.state);
+		if (this.state.videoNotPlayedYet) {
+
+			ga('send', 'event', 'Radium', window.location.href, 'User played video');
+			// console.log('User played video' );
+			this.setState({
+				videoNotPlayedYet: false
+			});
+		}
+	}
+
+	handleYoutubePause(e) {
+		ga('send', 'event', 'Radium', window.location.href, 'User paused at ' + e.target.getCurrentTime());
+		// console.log('User paused at ' + e.target.getCurrentTime());
+	}
+
+	handleYoutubeEnd() {
+		ga('send', 'event', 'Radium', window.location.href, 'User played video till the end');
+		console.log('User played video till the end');
+	}
+
+	handleShopBtnClick(e) {
+		ga('send', 'event', 'Radium', window.location.href, e.target.closest('a').title + ' - ' + e.target.closest('a').href);
+		// console.log(e.target.closest('a').title + ' - ' + e.target.closest('a').href);
+	}
+
 
 	render() {
 
@@ -34,10 +69,13 @@ export default class Page extends React.Component {
 			}
 		};
 
+		const videoHeight = (window.innerWidth - 32) * 9 / 16;
+
 		const videoOptions = {
 			width:'100%',
-			height:'auto',
+			height:videoHeight,
 			playerVars: {
+				rel: 0,
 				controls: 0,
 				showinfo: 0,
 				color: 'white'
@@ -52,7 +90,7 @@ export default class Page extends React.Component {
 				<div style={css.p}>Marie Claire, the French global lifestyle brand stepped into the Indian market to add colour and glamour to the lives of Indian women with its inaugural collection that is available exclusively on Myntra. It showcases the vivacious chic pieces created by Marie Claire design team especially for Indian women.</div>
 				<div style={css.p}>The Myntra shopper is smart, stylish, contemporary and independent which makes Marie Claire’s association with this platform a perfect match.</div>
 
-				<a style={css.shop} href="http://www.myntra.com/marie-claire?SRC=Radium" target="_blank"><img style={css.img} src="http://assets.myntassets.com/v1467205485/radium/marie%20claire/Marie-Claire-2-shop.jpg" /></a>
+				<a onClick={this.handleShopBtnClick} title="shop btn 1" style={css.shop} href="http://www.myntra.com/marie-claire?SRC=Radium" target="_blank"><img style={css.img} src="http://assets.myntassets.com/v1467205485/radium/marie%20claire/Marie-Claire-2-shop.jpg" /></a>
 			
 				<div style={css.blueContainer}>
 					<img style={css.img} src="http://assets.myntassets.com/v1467206253/radium/marie%20claire/Marie-Claire-6.jpg" />
@@ -74,12 +112,15 @@ export default class Page extends React.Component {
 
 				<div style={{margin: 16}}>
 					<YouTube
+						onPlay={this.handleYoutubePlay.bind(this)}
+						onEnd={this.handleYoutubeEnd}
+						onPause={this.handleYoutubePause}
 						videoId="aLzvUHL3RI4"
 						opts={videoOptions}
 					/>
 				</div>
 
-				<a style={css.shop} href="http://www.myntra.com/marie-claire?SRC=Radium" target="_blank"><img style={css.img} src="http://assets.myntassets.com/v1467205485/radium/marie%20claire/Marie-Claire-2-shop.jpg" /></a>
+				<a onClick={this.handleShopBtnClick} style={css.shop} title="shop btn 2" href="http://www.myntra.com/marie-claire?SRC=Radium" target="_blank"><img style={css.img} src="http://assets.myntassets.com/v1467205485/radium/marie%20claire/Marie-Claire-2-shop.jpg" /></a>
 
 			</div>			
 		);
