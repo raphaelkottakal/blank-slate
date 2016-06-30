@@ -12,7 +12,7 @@ export default class Page extends React.Component {
 		return(
 			<div>
 			
-				Hello world!
+			Hi World
 			</div>			
 		);
 
