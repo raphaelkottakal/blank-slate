@@ -8,6 +8,8 @@ import YouTube from 'react-youtube';
 
 import Carousel from './carousel';
 
+import scrollMonitor from 'scrollmonitor';
+
 export default class Page extends React.Component {
 
 	constructor() {
@@ -18,11 +20,12 @@ export default class Page extends React.Component {
 	}
 
 	handleYoutubePlay() {
+		console.log(this.refs.videoRef);
 
 		// console.log(this.state);
 		if (this.state.videoNotPlayedYet) {
 
-			ga('send', 'event', 'Radium', window.location.href, 'User played video');
+			// ga('send', 'event', 'Radium', window.location.href, 'User played video');
 			// console.log('User played video' );
 			this.setState({
 				videoNotPlayedYet: false
@@ -31,18 +34,39 @@ export default class Page extends React.Component {
 	}
 
 	handleYoutubePause(e) {
-		ga('send', 'event', 'Radium', window.location.href, 'User paused at ' + e.target.getCurrentTime());
+		// ga('send', 'event', 'Radium', window.location.href, 'User paused at ' + e.target.getCurrentTime());
 		// console.log('User paused at ' + e.target.getCurrentTime());
 	}
 
 	handleYoutubeEnd() {
-		ga('send', 'event', 'Radium', window.location.href, 'User played video till the end');
+		// ga('send', 'event', 'Radium', window.location.href, 'User played video till the end');
 		console.log('User played video till the end');
 	}
 
 	handleShopBtnClick(e) {
-		ga('send', 'event', 'Radium', window.location.href, e.target.closest('a').title + ' - ' + e.target.closest('a').href);
+		// ga('send', 'event', 'Radium', window.location.href, e.target.closest('a').title + ' - ' + e.target.closest('a').href);
 		// console.log(e.target.closest('a').title + ' - ' + e.target.closest('a').href);
+	}
+
+	handleYoutubeReady(e) {
+		console.log(e.target);
+
+		var elementWatcher = scrollMonitor.create(this.refs.videoRef);
+
+		// this.refs.videoRef.playVideo();
+
+		// e.target.playVideo();
+
+		console.log(elementWatcher);
+
+		elementWatcher.enterViewport(function() {
+		    console.log( 'I have entered the viewport' );
+		});
+		elementWatcher.exitViewport(function() {
+		    console.log( 'I have left the viewport' );
+		});
+
+		// e.target.playVideo();
 	}
 
 
@@ -112,6 +136,8 @@ export default class Page extends React.Component {
 
 				<div style={{margin: 16}}>
 					<YouTube
+						onReady={this.handleYoutubeReady.bind(this)}
+						ref="videoRef"
 						onPlay={this.handleYoutubePlay.bind(this)}
 						onEnd={this.handleYoutubeEnd}
 						onPause={this.handleYoutubePause}
