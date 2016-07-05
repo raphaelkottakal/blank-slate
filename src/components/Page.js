@@ -4,8 +4,9 @@ import ReactDOM from 'react-dom';
 import 'normalize.css/normalize.css';
 import '../css/main.css';
 
-export default class Page extends React.Component {
+import Ga from '../functions/Ga';
 
+export default class Page extends React.Component {
 
 	render() {
 
