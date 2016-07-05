@@ -77,7 +77,7 @@ export default class Page extends React.Component {
 		return(
 			<div style={this.getContainerStyles()}>
 
-		        <img src="http://assets.myntassets.com/v1466597545/SIS/beauty-hair-styling-guide/hairstyle-guide.jpg" style={{ width: '100%', height: 'auto'}}/>
+		        <img src="http://assets.myntassets.com/v1467717792/SIS/beauty-hair-styling-guide/easy-hairtstyles.jpg" style={{ width: '100%', height: 'auto'}}/>
 				<p style={style}>Now every single day can be a good hair day. Here’s an easy to follow guide on how to master a few popular hairstyles at home.</p>
 				<div>
 					{this.renderCarousel()}

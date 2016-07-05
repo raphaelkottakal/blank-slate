@@ -5,6 +5,10 @@ export default [
 		link: 'http://www.myntra.com/women-hairstyling?SRC=Radium',
 		slides: [
 			{
+				img: 'http://assets.myntassets.com/v1467717646/SIS/beauty-hair-styling-guide/loose-curls-first.jpg',
+				text:'SCROLL TO GET THIS LOOK'
+			},
+			{
 				img: 'http://assets.myntassets.com/v1466502160/SIS/beauty-hair-styling-guide/Beauty_store-steps-08.jpg',
 				text:'Blow dry your freshly washed hair till it is relatively straight'
 			},
@@ -36,6 +40,10 @@ export default [
 		sliderSection: true,
 		link: 'http://www.myntra.com/women-hairstyling?SRC=Radium',
 		slides: [
+			{
+				img: 'http://assets.myntassets.com/v1467717744/SIS/beauty-hair-styling-guide/chignon-first.jpg',
+				text:'SCROLL TO GET THIS LOOK'
+			},
 			{
 				img: 'http://assets.myntassets.com/v1466505490/SIS/beauty-hair-styling-guide/Beauty_store-steps-28.jpg',
 				text:'Apply heat-protective cream or hair serum to freshly washed hair'
@@ -85,6 +93,10 @@ export default [
 		sliderSection: true,
 		link: 'http://www.myntra.com/women-hairstyling?SRC=Radium',
 		slides: [
+			{
+				img: 'http://assets.myntassets.com/v1467717745/SIS/beauty-hair-styling-guide/bombshell-waves-first.jpg',
+				text:'SCROLL TO GET THIS LOOK'
+			},
 			{
 				img: 'http://assets.myntassets.com/v1466506147/SIS/beauty-hair-styling-guide/Beauty_store-steps-46.jpg',
 				text:'Apply heat-protective cream or hair serum to freshly washed hair and remove all tangles'
