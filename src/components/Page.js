@@ -6,7 +6,15 @@ import sliderGroupData from '../data/slider-group';
 
 import Carousel from './carousel';
 
+import Ga from '../functions/Ga';
+
 export default class Page extends React.Component {
+
+	handelShopBtnClick(e) {
+		Ga({ label: e.target.href });
+	}
+
+
 
 	getContainerStyles() {
 		return {
@@ -43,7 +51,7 @@ export default class Page extends React.Component {
 					<Carousel initialSlideHeight={400}>
 						{this.renderSlides(carousel.slides)}
 					</Carousel>
-					<a href={carousel.link} target="_blank" style={linkStyle}>Try now</a>
+					<a onClick={this.handelShopBtnClick} href={carousel.link} target="_blank" style={linkStyle}>Try now</a>
 				</div>
 			);
 		});
