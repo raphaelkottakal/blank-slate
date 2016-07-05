@@ -6,6 +6,11 @@ export default [
 		slides: [
 
 			{
+        		img: 'http://assets.myntassets.com/v1467717213/SIS/beauty-store-eyes/Smokey-eye-first.jpg',
+        		text:'SCROLL TO GET THIS LOOK'
+			},
+
+			{
         		img: 'http://assets.myntassets.com/v1466577756/SIS/beauty-store-eyes/Smokey-eye-step-1-min.jpg',
         		text:'Moisturise your eyelids'
 			},
@@ -110,6 +115,10 @@ export default [
 		link: 'http://www.myntra.com/steps-to-nail-the-cat-eye?SRC=Radium',
 		slides: [
 			{
+        		img: 'http://assets.myntassets.com/v1467717304/SIS/beauty-store-eyes/cat-eye-first.jpg',
+        		text: 'SCROLL TO GET THIS LOOK'
+			},
+			{
         		img: 'http://assets.myntassets.com/v1466505190/SIS/beauty-store-eyes/Beauty_store-steps-18-min.jpg',
         		text: 'Apply some moisturiser all over your eyelids'
 			},
@@ -168,6 +177,10 @@ export default [
 		sliderSection: true,
 		link: 'http://www.myntra.com/steps-to-master-simple-day-look?SRC=Radium',
 		slides: [
+			{
+	    		img: 'http://assets.myntassets.com/v1467717601/SIS/beauty-store-eyes/simple-day-look-first.jpg',
+	    		text: 'SCROLL TO GET THIS LOOK'
+			},
 			{
 	    		img: 'http://assets.myntassets.com/v1466594239/SIS/beauty-store-eyes/simple-day-look-1.jpg',
 	    		text: 'Moisturise your eyelids'
