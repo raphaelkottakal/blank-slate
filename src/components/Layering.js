@@ -1,6 +1,8 @@
 import React from 'react';
 import _ from 'lodash';
 
+import Ga from '../functions/Ga';
+
 export default class Layering extends React.Component {
 
 	constructor() {
@@ -79,6 +81,10 @@ export default class Layering extends React.Component {
 	}
 
 	handleSwitchClick(key) {
+
+		// console.log(this.props.look, key);
+
+		Ga({ label: 'User clicked ' + this.props.look + ' - key: ' + key});
 
 		let stateObj = this.state;
 

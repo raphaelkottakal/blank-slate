@@ -3,10 +3,10 @@ export default {
 		looks: {
 			'0': 'http://assets.myntassets.com/v1466495506/SIS/college-layering/new/men/men-L1-base.jpg',
 			'01': 'http://assets.myntassets.com/v1466495506/SIS/college-layering/new/men/men-L1-jacket.jpg',
-			'02': 'http://assets.myntassets.com/v1466495506/SIS/college-layering/new/men/men-L1-bag.jpg',
-			'03': 'http://assets.myntassets.com/v1466495507/SIS/college-layering/new/men/men-L1-sunglasses.jpg',
-			'012': 'http://assets.myntassets.com/v1466495506/SIS/college-layering/new/men/men-L1-jacket-bags.jpg',
-			'013': 'http://assets.myntassets.com/v1466495507/SIS/college-layering/new/men/men-L1-jacket-sunglasses.jpg',
+			'03': 'http://assets.myntassets.com/v1466495506/SIS/college-layering/new/men/men-L1-bag.jpg',
+			'02': 'http://assets.myntassets.com/v1466495507/SIS/college-layering/new/men/men-L1-sunglasses.jpg',
+			'013': 'http://assets.myntassets.com/v1466495506/SIS/college-layering/new/men/men-L1-jacket-bags.jpg',
+			'012': 'http://assets.myntassets.com/v1466495507/SIS/college-layering/new/men/men-L1-jacket-sunglasses.jpg',
 			'023': 'http://assets.myntassets.com/v1466495507/SIS/college-layering/new/men/men-L1-sunglasses-bag.jpg',
 			'0123': 'http://assets.myntassets.com/v1466495506/SIS/college-layering/new/men/men-L1-all.jpg'
 		},
