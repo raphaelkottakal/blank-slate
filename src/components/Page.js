@@ -10,7 +10,13 @@ import layeringData from '../data/layered';
 
 import Layering from './Layering';
 
+import Ga from '../functions/Ga';
+
 export default class Page extends React.Component {
+
+	handelShopBtnClick(e) {
+		Ga({ label: e.target.closest('a').href });
+	}
 
 	render() {
 
@@ -71,14 +77,14 @@ export default class Page extends React.Component {
 				<div style={css.copy}>Whether it's a jacket or a scarf, small changes make a big difference when it comes to getting ready for college. Make sure you put your best foot forward by incorporating these trendy layering options.</div>
 				<div style={css.cta}>Click to add or remove layers</div>
 
-				<Layering imgData={layeringData.look1} />
+				<Layering imgData={layeringData.look1} look="Contemporary classics" />
 				<div style={css.title}>Contemporary classics</div>
-				<a target="_blank" style={_.assign({},css.shop,{backgroundColor: '#FFD782'})} href="http://www.myntra.com/contemporary-classics?SRC=Radium">Shop look</a>
+				<a onClick={this.handelShopBtnClick} target="_blank" style={_.assign({},css.shop,{backgroundColor: '#FFD782'})} href="http://www.myntra.com/contemporary-classics?SRC=Radium">Shop look</a>
 
 				<div style={{borderBottom: '1px solid gray', width: '60%', margin: '32px auto' }} />
-				<Layering imgData={layeringData.look2} />
+				<Layering imgData={layeringData.look2} look="'90s recall" />
 				<div style={css.title}>'90s recall</div>
-				<a target="_blank" style={css.shop} href="http://www.myntra.com/90s-recall?SRC=Radium">Shop look</a>
+				<a onClick={this.handelShopBtnClick} target="_blank" style={css.shop} href="http://www.myntra.com/90s-recall?SRC=Radium">Shop look</a>
 			</div>			
 		);
 
