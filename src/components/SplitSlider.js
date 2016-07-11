@@ -6,7 +6,7 @@ export default class SplitSlider extends React.Component {
 	constructor() {
 		super();
 		this.state = {
-			position: 50,
+			position: 52,
 			onfirsttap: false,
 			// touche0x: null,
 			// touche0y: null
@@ -74,7 +74,7 @@ export default class SplitSlider extends React.Component {
 		let sliderText = {
 			position: 'absolute',
 		    top: '40%',
-		    left: '50%',
+		    left: '52%',
 		    zIndex: 9999,
 		    backgroundColor: (this.props.slideBtnColor) ? this.props.slideBtnColor :'#000',
 		    color: (this.props.slideBtnTxtColor) ? this.props.slideBtnTxtColor :'#fff',
@@ -105,7 +105,7 @@ export default class SplitSlider extends React.Component {
 			width: this.state.position + '%',
 			maxWidth: '100%',
 			height: '100%',
-			backgroundImage: 'url('+ this.props.after +')',
+			backgroundImage: 'url('+ this.props.before +')',
 			backgroundSize: 'cover',
 			backgroundRepeat: 'no-repeat'
 		}
@@ -113,7 +113,7 @@ export default class SplitSlider extends React.Component {
 		return(
 				<div>
 					<div style={outsideWrapper} onTouchStart={this.handleClick.bind(this)} onTouchMove={this.handleClick.bind(this)}  >
-						<img style={imageStyle} src={this.props.before} />
+						<img style={imageStyle} src={this.props.after} />
 						<div style={afterImage}></div>
 						<div style={sliderText}>slide</div>
 					</div>
