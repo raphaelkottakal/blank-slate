@@ -19,3 +19,17 @@ html {
   display: table;
   clear: both;
 }
+
+img {
+	display: block;
+	width: 100%;
+}
+
+/*.inactive {
+	opacity: 0.5;
+}
+
+.active {
+	border-color: tomato !important;
+	opacity: 1;
+}*/
