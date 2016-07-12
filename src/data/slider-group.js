@@ -62,52 +62,52 @@ export default [
 		]
 	},
 
-	{
-		img: 'http://assets.myntassets.com/v1466504514/SIS/beauty-store-eyes/Beauty_store-steps-title.jpg',
-		sliderSection: true,
-		link: 'http://www.myntra.com/steps-to-get-electric-blue-eyes?SRC=Radium',
-		slides: [
-			{
-        		img: 'http://assets.myntassets.com/v1466504514/SIS/beauty-store-eyes/Beauty_store-steps-1.jpg',
-        		text: 'Prep your eyes by applying moisturiser'
-			},
+	// {
+	// 	img: 'http://assets.myntassets.com/v1466504514/SIS/beauty-store-eyes/Beauty_store-steps-title.jpg',
+	// 	sliderSection: true,
+	// 	link: 'http://www.myntra.com/steps-to-get-electric-blue-eyes?SRC=Radium',
+	// 	slides: [
+	// 		{
+ //        		img: 'http://assets.myntassets.com/v1466504514/SIS/beauty-store-eyes/Beauty_store-steps-1.jpg',
+ //        		text: 'Prep your eyes by applying moisturiser'
+	// 		},
 
-			{
-        		img: 'http://assets.myntassets.com/v1466504514/SIS/beauty-store-eyes/Beauty_store-steps-2.jpg',
-        		text: 'Apply primer or foundation'
-			},
+	// 		{
+ //        		img: 'http://assets.myntassets.com/v1466504514/SIS/beauty-store-eyes/Beauty_store-steps-2.jpg',
+ //        		text: 'Apply primer or foundation'
+	// 		},
 			
-			{
-        		img: 'http://assets.myntassets.com/v1466504514/SIS/beauty-store-eyes/Beauty_store-steps-3.jpg',
-        		text: 'Use a medium-sized brush to apply a light blue shade all over the lid'
-			},
+	// 		{
+ //        		img: 'http://assets.myntassets.com/v1466504514/SIS/beauty-store-eyes/Beauty_store-steps-3.jpg',
+ //        		text: 'Use a medium-sized brush to apply a light blue shade all over the lid'
+	// 		},
 			
-			{
-        		img: 'http://assets.myntassets.com/v1466504514/SIS/beauty-store-eyes/Beauty_store-steps-4.jpg',
-        		text: 'Use a darker shade of blue on the crease and blend well'
-			},
+	// 		{
+ //        		img: 'http://assets.myntassets.com/v1466504514/SIS/beauty-store-eyes/Beauty_store-steps-4.jpg',
+ //        		text: 'Use a darker shade of blue on the crease and blend well'
+	// 		},
 			
-			{
-        		img: 'http://assets.myntassets.com/v1466504514/SIS/beauty-store-eyes/Beauty_store-steps-5.jpg',
-        		text: 'Trace your lash line with navy blue or indigo eyeliner'
-			},
+	// 		{
+ //        		img: 'http://assets.myntassets.com/v1466504514/SIS/beauty-store-eyes/Beauty_store-steps-5.jpg',
+ //        		text: 'Trace your lash line with navy blue or indigo eyeliner'
+	// 		},
 			
-			{
-        		img: 'http://assets.myntassets.com/v1466504514/SIS/beauty-store-eyes/Beauty_store-steps-6.jpg',
-        		text: 'Apply mascara for a dramatic effect'
-			},
+	// 		{
+ //        		img: 'http://assets.myntassets.com/v1466504514/SIS/beauty-store-eyes/Beauty_store-steps-6.jpg',
+ //        		text: 'Apply mascara for a dramatic effect'
+	// 		},
 			
-			{		        	
-        		img: 'http://assets.myntassets.com/v1466504515/SIS/beauty-store-eyes/Beauty_store-steps-7.jpg',
-        		text: 'Voilà!'
-        	},
+	// 		{		        	
+ //        		img: 'http://assets.myntassets.com/v1466504515/SIS/beauty-store-eyes/Beauty_store-steps-7.jpg',
+ //        		text: 'Voilà!'
+ //        	},
 			
-			{
-        		img: 'http://assets.myntassets.com/v1466504515/SIS/beauty-store-eyes/Beauty_store-steps-8.jpg',
-				text: 'You’re all set'
-			}
-		]	
-	},
+	// 		{
+ //        		img: 'http://assets.myntassets.com/v1466504515/SIS/beauty-store-eyes/Beauty_store-steps-8.jpg',
+	// 			text: 'You’re all set'
+	// 		}
+	// 	]	
+	// },
 
 	{
 		img: 'http://assets.myntassets.com/v1466505191/SIS/beauty-store-eyes/Beauty_store-steps-55-min.jpg',
