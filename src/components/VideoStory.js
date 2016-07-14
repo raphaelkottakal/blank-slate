@@ -124,7 +124,7 @@ export default class VideoStory extends React.Component {
 			container: {
 				position: 'relative',
 				width: '100%',
-				// overflow: 'hidden',
+				overflow: 'hidden',
 			},
 			video: {
 				display: 'block',
@@ -189,7 +189,7 @@ export default class VideoStory extends React.Component {
 		return(
 			<div>
 				<div style={css.container}>
-					<video ref="video" style={css.video}>
+					<video ref="video" poster="http://assets.myntassets.com/v1468496206/radium/loop-min.png" style={css.video}>
 					  <source src="http://res.cloudinary.com/myntra-com/video/upload/v1468412438/radium/videoplayback.mp4" type="video/mp4" />
 					  Your browser does not support HTML5 video.
 					</video>

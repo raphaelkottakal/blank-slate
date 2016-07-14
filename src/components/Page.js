@@ -36,6 +36,12 @@ export default class Page extends React.Component {
 				text:'So let\'s do some crazzy shizz!',
 				bgColor: 'hsla(120,50%,50%,0.5)',
 				color:'white',
+			},
+			{
+				time: 28,
+				text:'That\'s all...',
+				bgColor: 'hsla(80,50%,50%,0.5)',
+				color:'white',
 			}
 		]
 
