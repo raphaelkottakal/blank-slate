@@ -110,12 +110,65 @@ export default class SplitSlider extends React.Component {
 			backgroundRepeat: 'no-repeat'
 		}
 
+		let nameStyle = {
+			// position:'absolute',
+			width:'100%',			
+		    textAlign: 'center',
+		    fontSize: '18px',
+		    fontFamily: 'Playfair Display, serif',
+		    margin: '16px 0 0',
+		    fontWeight: '700'
+		}
+
+		let designationStyle = {
+			// position:'absolute',
+		    fontFamily: 'Playfair Display, serif',
+			width:'100%',			
+		    textAlign: 'center',
+		    fontSize: '15px',
+		    margin: '1% 0',
+		}
+
+		let quotesStyle = {
+			width:'100%',			
+		    textAlign: 'center',
+		    fontSize: '13px',
+		    padding: '15px 55px'
+		}
+
+		let qotesTopStyle ={
+			position:'absolute',
+			top: '0px',
+			fontSize: '37px',
+			fontFamily: 'Playfair Display, serif',
+			marginLeft: '4px'
+		}
+
+		let quotesBottomStyle ={
+			position:'absolute',
+			bottom: -21,
+			right:0,
+			fontSize: '37px',
+			fontFamily: 'Playfair Display, serif',
+			marginRight: '4px'
+
+		}
 		return(
 				<div>
 					<div style={outsideWrapper} onTouchStart={this.handleClick.bind(this)} onTouchMove={this.handleClick.bind(this)}  >
 						<img style={imageStyle} src={this.props.after} />
 						<div style={afterImage}></div>
 						<div style={sliderText}>slide</div>
+					</div>
+					<div>
+						<div style={nameStyle}>{this.props.name}</div>
+						<div style={designationStyle}>{this.props.designation}</div>
+					</div>
+
+					<div style={{position:'relative'}}>
+						<div style={qotesTopStyle}>&ldquo; </div>
+							<div style={quotesStyle}>{this.props.quotes}</div>
+						<div style={quotesBottomStyle}>&rdquo; </div>
 					</div>
 
 				</div>
