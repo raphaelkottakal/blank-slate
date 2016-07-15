@@ -15,7 +15,7 @@ export default class Page extends React.Component {
 		const videoData = [
 			{
 				time: 0,
-				text:'This is the text when the video loads.',
+				text:'This is the text before the video loads.',
 				bgColor: 'hsla(0,0%,0%,0.5)',
 				color:'white',
 			},
