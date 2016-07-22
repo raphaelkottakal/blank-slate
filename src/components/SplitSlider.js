@@ -1,6 +1,8 @@
 import React from 'react';
 import _ from 'lodash';
 
+import Ga from '../functions/Ga';
+
 export default class SplitSlider extends React.Component {
 
 	constructor() {
@@ -14,11 +16,13 @@ export default class SplitSlider extends React.Component {
 		}
 	}
 
+
+	handelShopBtnClick(e) {
+		Ga({action: 'Shop button', label: e.target.href});
+	}
+
+
 	handleClick(e) {
-		// console.log('Clicked', e);
-		// console.log('X', e.clientX);
-		// console.log('Y', e.clientY);
-		// console.log('Width', e.target.parentElement.offsetWidth);
 
 		let width = e.target.parentElement.offsetWidth,
 			x = e.touches[0].clientX,
@@ -48,6 +52,10 @@ export default class SplitSlider extends React.Component {
 		_.assignIn(setObject, {		
 			onfirsttap: true
 		});
+
+		if(this.state.onfirsttap == false){
+			Ga({action: 'Slider', label: 'User has used the slider'});
+		}
 		
 
 		this.setState(setObject);
@@ -127,7 +135,7 @@ export default class SplitSlider extends React.Component {
 			width:'100%',			
 		    textAlign: 'center',
 		    fontSize: '18px',
-		    margin: '0',
+		    margin: 0
 		}
 
 		let quotesStyle = {
@@ -157,16 +165,6 @@ export default class SplitSlider extends React.Component {
 			marginTop: '-14%'		
 		}
 
-		// let quotesBottomStyle ={
-		// 	position:'absolute',
-		// 	bottom: -21,
-		// 	right:0,
-		// 	fontSize: '75px',
-		// 	fontFamily: 'Playfair Display, serif',
-		// 	marginRight: '31px',
-		//     color: '#bcbbbb'
-
-		// }
 		let shopButton = {
 		    width: '90px',
 			height: '29px',
@@ -177,7 +175,7 @@ export default class SplitSlider extends React.Component {
 			backgroundColor: '#666',
 			color: '#fff',
     		textTransform: 'uppercase',
-   			fontSize: '14px',
+   			fontSize: '13px',
    			textDecoration: 'none',
    			display: 'block'
 		}
@@ -199,7 +197,7 @@ export default class SplitSlider extends React.Component {
 							<div style={quotesStyle}>{this.props.quotes}</div>
 						<img style={quoteEndStyle} src={this.props.quoteEnd} />
 					</div>
-					<a style={shopButton} href={this.props.curationLink} target="_blanck">Shop now</a>
+					<a style={shopButton} onClick={this.handelShopBtnClick.bind(this)} href={this.props.curationLink} target="_blanck">Shop now</a>
 				</div>
 
 		);
