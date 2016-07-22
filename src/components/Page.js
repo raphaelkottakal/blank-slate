@@ -8,6 +8,8 @@ import Carousel from './carousel';
 
 import Ga from '../functions/Ga';
 
+import ImageLinker from './ImageLinker';
+
 export default class Page extends React.Component {
 
 	handelShopBtnClick(e) {
@@ -80,13 +82,84 @@ export default class Page extends React.Component {
 			fontSize: '15px'
 		};
 
+		const linkPointsRed = [
+			{
+				color: '#8FE0FF',
+				top: '26%',
+				left: '40%',
+				link: 'http://www.myntra.com/jackets/puma/puma-navy--red-reversible-jacket/1002113/buy'
+			},
+			{
+				color: '#BF01FD',
+				top: '55%',
+				left: '71%',
+				link: 'http://www.myntra.com/backpacks/wildcraft/wiki-by-wildcraft-unisex-red-printed-backpack/783244/buy'
+			},
+			{
+				color: '#3B3E2D',
+				top: '80%',
+				left: '42%',
+				link: 'http://www.myntra.com/casual-shoes/supra/supra-men-white-yorek-low-sneakers/1359648/buy'
+			},
+		];
+
+		const linkPointsBlue = [
+			{
+				color: '#FF3333',
+				top: '18%',
+				left: '58%',
+				link: 'http://www.myntra.com/sunglasses/ray-ban/ray-ban-unisex-browline-sunglasses-0rb3016/255303/buy'
+			},
+			{
+				color: 'black',
+				top: '58%',
+				left: '32%',
+				link: 'http://www.myntra.com/backpacks/flying-machine/flying-machine-unisex-white--black-printed-backpack/1083038/buy'
+			},
+			{
+				color: '#F325C6',
+				top: '73%',
+				left: '64%',
+				link: 'http://www.myntra.com/casual-shoes/fila/fila-men-black-relaxer-iv-casual-shoes/1186242/buy'
+			},
+		];
+
 		return(
 			<div style={this.getContainerStyles()}>
 
-		        <img src="http://assets.myntassets.com/v1467717792/SIS/beauty-hair-styling-guide/easy-hairtstyles.jpg" style={{ width: '100%', height: 'auto'}}/>
-				<p style={style}>Now every single day can be a good hair day. Here’s an easy to follow guide on how to master a few popular hairstyles at home.</p>
+		        <h2 style={{marginLeft: 5}} >Image linker and slider</h2>
+				<p style={style}>This is pretty cool! Click bouncing circles to shop item.</p>
 				<div>
-					{this.renderCarousel()}
+					<Carousel initialSlideHeight={400} autoplay={true} autoplayInterval={4000}>
+						<div>
+							<ImageLinker
+								image="http://assets.myntassets.com/v1465895191/SIS/image-linker/Red.jpg"
+								points={linkPointsRed}
+							/>
+							<div style={{padding: '0 8px', textAlign: 'center'}}>Some random text.</div>
+						</div>
+						<div>
+							<ImageLinker
+								image="http://assets.myntassets.com/v1466074012/SIS/Blue.jpg"
+								points={linkPointsBlue}
+							/>
+							<div style={{padding: '0 8px', textAlign: 'center'}}>Some more random text.</div>
+						</div>
+						<div>
+							<ImageLinker
+								image="http://assets.myntassets.com/v1465895191/SIS/image-linker/Red.jpg"
+								points={linkPointsRed}
+							/>
+							<div style={{padding: '0 8px', textAlign: 'center'}}>Some random text.</div>
+						</div>
+						<div>
+							<ImageLinker
+								image="http://assets.myntassets.com/v1466074012/SIS/Blue.jpg"
+								points={linkPointsBlue}
+							/>
+							<div style={{padding: '0 8px', textAlign: 'center'}}>Some more random text.</div>
+						</div>
+					</Carousel>
 				</div>
 				
 			</div>

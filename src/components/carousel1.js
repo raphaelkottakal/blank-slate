@@ -509,7 +509,7 @@ const Carousel = React.createClass({
       slidesToShow = this.state.slidesToScroll;
     }
     if (this.state.currentSlide >= childrenCount - slidesToShow && !this.props.wrapAround) {
-      return this.goToSlide(0);
+      return;
     }
 
     if (this.props.wrapAround) {
@@ -647,12 +647,14 @@ const Carousel = React.createClass({
       frameWidth,
       frameHeight,
       slideHeight,
+      slidesCount,
       childNodesArray,
       maxHeightSlide = 0;
 
     slidesToScroll = props.slidesToScroll;
     frame = this.refs.frame;
     firstSlide = frame.childNodes[0].childNodes[0];
+    slidesCount = frame.childNodes[0].childNodes.length;
     childNodesArray = frame.childNodes[0].childNodes;
 
 
@@ -858,7 +860,7 @@ const Carousel = React.createClass({
       {
         return {
           position: 'absolute',
-          top: '50%',
+          top: '45%',
           left: 0,
           transform: 'translateY(-50%)',
           WebkitTransform: 'translateY(-50%)',
@@ -880,7 +882,7 @@ const Carousel = React.createClass({
       {
         return {
           position: 'absolute',
-          top: '50%',
+          top: '45%',
           right: 0,
           transform: 'translateY(-50%)',
           WebkitTransform: 'translateY(-50%)',
@@ -902,7 +904,8 @@ const Carousel = React.createClass({
           bottom: 0,
           width: '100%',
           textAlign: 'center',
-          // left: '50%',
+          // left: '25%',
+          // marginLeft: '-25%',
           // transform: 'translateX(-50%)',
           // WebkitTransform: 'translateX(-50%)',
           // msTransform: 'translateX(-50%)'
