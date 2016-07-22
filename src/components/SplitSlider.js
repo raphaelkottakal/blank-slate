@@ -68,7 +68,8 @@ export default class SplitSlider extends React.Component {
 		let imageStyle = {
 			width: '100%',
 			height: 'auto',
-			display: 'block'
+			display: 'block',
+			marginBottom: '12px'
 		}
 
 		let sliderText = {
@@ -125,36 +126,64 @@ export default class SplitSlider extends React.Component {
 		    fontFamily: 'Playfair Display, serif',
 			width:'100%',			
 		    textAlign: 'center',
-		    fontSize: '15px',
-		    margin: '1% 0',
+		    fontSize: '18px',
+		    margin: '0',
 		}
 
 		let quotesStyle = {
 			width:'100%',			
 		    textAlign: 'center',
-		    fontSize: '13px',
-		    padding: '15px 55px'
+		    fontSize: '15px',
+		    padding: '0 55px 25px',
+		    marginTop: '-5%'
 		}
 
-		let qotesTopStyle ={
-			position:'absolute',
-			top: '0px',
-			fontSize: '37px',
-			fontFamily: 'Playfair Display, serif',
-			marginLeft: '4px'
+		// let qotesTopStyle ={
+		// 	position:'absolute',
+		// 	top: '0px',
+		// 	fontSize: '75px',
+		// 	fontFamily: 'Playfair Display, serif',
+		// 	marginLeft: '31px',
+		// 	color: '#bcbbbb'
+		// }
+		let quoteStartStyle = {
+		    display: 'inline',
+		    marginLeft: '14px'
+		}
+		let quoteEndStyle = {
+			display: 'inline',
+			marginRight: '20px',
+			float: 'right',
+			marginTop: '-14%'		
 		}
 
-		let quotesBottomStyle ={
-			position:'absolute',
-			bottom: -21,
-			right:0,
-			fontSize: '37px',
-			fontFamily: 'Playfair Display, serif',
-			marginRight: '4px'
+		// let quotesBottomStyle ={
+		// 	position:'absolute',
+		// 	bottom: -21,
+		// 	right:0,
+		// 	fontSize: '75px',
+		// 	fontFamily: 'Playfair Display, serif',
+		// 	marginRight: '31px',
+		//     color: '#bcbbbb'
 
+		// }
+		let shopButton = {
+		    width: '90px',
+			height: '29px',
+			margin: '10px auto',
+			padding: '5px',
+			textAlign: 'center',
+			marginBottom: '14px',
+			backgroundColor: '#666',
+			color: '#fff',
+    		textTransform: 'uppercase',
+   			fontSize: '14px',
+   			textDecoration: 'none',
+   			display: 'block'
 		}
 		return(
 				<div>
+					<img style={imageStyle} src={this.props.masterImage} />
 					<div style={outsideWrapper} onTouchStart={this.handleClick.bind(this)} onTouchMove={this.handleClick.bind(this)}  >
 						<img style={imageStyle} src={this.props.after} />
 						<div style={afterImage}></div>
@@ -166,11 +195,11 @@ export default class SplitSlider extends React.Component {
 					</div>
 
 					<div style={{position:'relative'}}>
-						<div style={qotesTopStyle}>&ldquo; </div>
+						<img style={quoteStartStyle} src={this.props.quoteStart} />
 							<div style={quotesStyle}>{this.props.quotes}</div>
-						<div style={quotesBottomStyle}>&rdquo; </div>
+						<img style={quoteEndStyle} src={this.props.quoteEnd} />
 					</div>
-
+					<a style={shopButton} href={this.props.curationLink} target="_blanck">Shop now</a>
 				</div>
 
 		);
