@@ -15,6 +15,13 @@ html {
 	box-sizing: inherit;
 }
 
+* {
+	-webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
 .clearfix:after {
   content: "";
   display: table;

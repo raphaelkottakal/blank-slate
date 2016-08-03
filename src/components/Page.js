@@ -16,8 +16,8 @@ export default class Page extends React.Component {
 
 		const pairingData = [
 			{
-				title: 'jeans',
-				image: 'http://www.voisins.com/images/products/large/970.jpg',
+				title: 'Jeans',
+				image: '/dist/jeans.jpg',
 				shop: 'http://www.myntra.com/jeans',
 				pairs: [
 					{
@@ -38,8 +38,30 @@ export default class Page extends React.Component {
 				]
 			},
 			{
-				title: 'jeans',
-				image: 'http://www.voisins.com/images/products/large/970.jpg',
+				title: 'Not jeans',
+				image: '/dist/jeans.jpg',
+				shop: 'http://www.myntra.com/jeans',
+				pairs: [
+					{
+						title: 'one',
+						image: 'https://s-media-cache-ak0.pinimg.com/564x/fa/cd/8a/facd8a3b3413bcc64108e7495db65d21.jpg',
+						shop: 'http://www.myntra.com/shirt'
+					},
+					{
+						title: 'two',
+						image: 'https://s-media-cache-ak0.pinimg.com/564x/fa/cd/8a/facd8a3b3413bcc64108e7495db65d21.jpg',
+						shop: 'http://www.myntra.com/shirt'
+					},
+					{
+						title: 'three',
+						image: 'https://s-media-cache-ak0.pinimg.com/564x/fa/cd/8a/facd8a3b3413bcc64108e7495db65d21.jpg',
+						shop: 'http://www.myntra.com/shirt'
+					},
+				]
+			},
+			{
+				title: 'Not really jeans',
+				image: '/dist/jeans.jpg',
 				shop: 'http://www.myntra.com/jeans',
 				pairs: [
 					{
@@ -65,7 +87,7 @@ export default class Page extends React.Component {
 
 		return(
 			<div>
-				<Countdown options={OPTIONS} />
+				{/*<Countdown options={OPTIONS} />*/}
 				<Pairing data={pairingData} />
 			</div>			
 		);

@@ -35,14 +35,34 @@ export default class Countdown extends Component {
   }
 
   render() {
+    const css = {
+      container: {
+        width: '25%',
+        height: 'auto',
+        display: 'inline-block',
+        textAlign: 'center',
+      }
+    }
     return (
       <div style={{fontFamily: 'Oswald'}} className="react-count-down">
-       {/*<span className="date"> {this.state.remaining}</span>
-       <span className="prefix"> {this.props.options.prefix}</span>*/}
-       <div>{this.state.days} Days</div>
-       <div>{this.state.hours} Hours</div>
-       <div>{this.state.minutes} Minutes</div>
-       <div>{this.state.seconds} Seconds</div>
+        {/*<span className="date"> {this.state.remaining}</span>
+        <span className="prefix"> {this.props.options.prefix}</span>*/}
+        <div style={css.container}>
+          <div>{this.state.days}</div>
+          <div>Days</div>
+        </div>
+        <div style={css.container}>
+          <div>{this.state.hours}</div>
+          <div>Hours</div>
+        </div>
+        <div style={css.container}>
+          <div>{this.state.minutes}</div>
+          <div>Minutes</div>
+        </div>
+        <div style={css.container}>
+          <div>{this.state.seconds}</div>
+          <div>Seconds</div>
+        </div>
       </div>
     )
   };
