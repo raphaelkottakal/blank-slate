@@ -6,32 +6,46 @@ import SplitGroupData from '../data/split-grp';
 
 export default class imgSpliter extends React.Component {
 
+	getTextStyles() {
+		return {
+
+				textAlign: 'center',
+			    textDecoration: 'underline',
+			    fontSize: '24px',
+			    letterSpacing: '1.4px',
+		}
+	} 
+
 
 	createSplit(){
 
-		const splitSection = this.props.data.splitSection.map((splitimg, i)=>{
+		const splitSection = this.props.data.splitSection.map((splitblock, i)=>{
 			
-			console.log(splitimg.link, splitimg.img, splitimg.text);
+			console.log(splitblock.link, splitblock.img, splitblock.text);
 
 			return (
 			
-				<div>
-					<a href={splitimg.link}>
+				<div style={{width:'50%', display:'inline-block'}}>
 
-						<img src={splitimg.img}  style={{width:'50%'}}/>
+				<p style={this.getTextStyles()}>{splitblock.text}</p>
+				
+					<a href={splitblock.link}>
+
+						<img src={splitblock.img} style={{width:'100%'}}/>
 
 					</a>
 
-					<p>{splitimg.text}</p>
+					
 
 				</div>
 			)
 		});
 
+		return splitSection ;
 	}
 
 	render(){
-		console.log(this.createSplit());
+		// console.log(this.createSplit());
 		return(
 			
 			<div>
