@@ -17,9 +17,10 @@
     "url": "https://github.com/raphaelkottakal/blank-slate/issues"
   },
   "dependencies": {
-    "react-dom": "~15.1.0",
+    "lodash": "^4.14.1",
+    "normalize.css": "~4.1.1",
     "react": "~15.1.0",
-    "normalize.css": "~4.1.1"
+    "react-dom": "~15.1.0"
   },
   "devDependencies": {
     "babel-loader": "~6.2.4",
