@@ -6,17 +6,19 @@ import '../css/main.css';
 
 import Ga from '../functions/Ga';
 
+import RowSpliter from './rowspliter';
+
+import officeStoreData from '../data/office-store';
+
+
 export default class Page extends React.Component {
 
 	render() {
 
 		return(
 			<div>
-			
-				Hello world!
+				<RowSpliter data={officeStoreData} />
 			</div>			
-		);
-
+		)
 	}
-
 }
