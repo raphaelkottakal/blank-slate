@@ -10,9 +10,16 @@ export default class imgSpliter extends React.Component {
 		return {
 
 				textAlign: 'center',
-			    textDecoration: 'underline',
+			  
 			    fontSize: '24px',
 			    letterSpacing: '1.4px',
+			    textAlign: 'center',
+				width: '60%',
+			    borderBottom: '1px solid #000',
+			    marginLeft: '22%',
+			    paddingBottom: '5px',
+			    fontWeight:'500'
+
 		}
 	} 
 
@@ -28,7 +35,7 @@ export default class imgSpliter extends React.Component {
 				<div style={{width:'50%', display:'inline-block'}}>
 
 				<p style={this.getTextStyles()}>{splitblock.text}</p>
-				
+
 					<a href={splitblock.link}>
 
 						<img src={splitblock.img} style={{width:'100%'}}/>
@@ -49,7 +56,7 @@ export default class imgSpliter extends React.Component {
 		return(
 			
 			<div>
-				<p>hi</p>
+				
 				{this.createSplit()}
 
 			</div>
