@@ -17,7 +17,7 @@ export default class imgSpliter extends React.Component {
 				width: '60%',
 			    borderBottom: '1px solid #000',
 			    marginLeft: '22%',
-			    paddingBottom: '5px',
+			    paddingBottom: '2px',
 			    fontWeight:'500'
 
 		}
