@@ -7,16 +7,11 @@ import officeStoreData from '../data/office-store';
 
 export default class RowSpliter extends React.Component {
 
-	// constructor() {
-	// 	super();
-	// 	this.state = {
-	// 		width:100
-	// 	}
-	// }
 	columnStyles(){
 		let style = {
 			width: '50%',
-			float: 'left'
+			float: 'left',
+			textAlign: 'center'
 		}
 		return style;
 	}
@@ -28,31 +23,30 @@ export default class RowSpliter extends React.Component {
 	}
 	buttonStyle(){
 		let style = {
-			    textAlign: 'center',
-				backgroundColor: '#000',
-				color:'#fff',
-				padding: '2px',
-				width: '100px',
-				height: '25px',
-				margin: '0 auto',
-			    fontSize: '13px',
-			    marginTop: '15px'
+		    fontFamily:this.props.data.font,
+		    fontSize:this.props.data.fontsize,
+			backgroundColor: this.props.data.bgColor,
+			color:this.props.data.color,
+			padding: '4px 12px',
+			display: 'inline-block', 
+			textDecoration:'none',
+		    marginTop: '15px',
 		}
 		return style;
 	}
 
 	createBox(){
 		const boxes = this.props.data.items.map((val, key)=>{
-			console.log(val, key);
+			// console.log(val, key);
+			// console.log(this.props.data);
 			return (
 				<div style={this.columnStyles()} key={key}>
 					<img style={this.imagStyle()} src={val.imageUrl} />
-					<p style={this.buttonStyle()}>{val.text}</p>
+					<a style={this.buttonStyle()} href={val.shopLink}>{val.text}</a>
 				</div>
 			)
 		});
 
-		// console.log(boxes);
 		return boxes;
 	}
 
@@ -67,7 +61,6 @@ export default class RowSpliter extends React.Component {
 			textAlign:'center'
 
 		}
-		// console.log(this.props.data.title);
 
 		return(
 			<div>
