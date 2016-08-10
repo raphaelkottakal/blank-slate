@@ -42,7 +42,7 @@ export default class RowSpliter extends React.Component {
 			return (
 				<div style={this.columnStyles()} key={key}>
 					<img style={this.imagStyle()} src={val.imageUrl} />
-					<a style={this.buttonStyle()} href={val.shopLink}>{val.text}</a>
+					<a style={this.props.data.buttonStyle} href={val.shopLink}>{val.text}</a>
 				</div>
 			)
 		});
