@@ -7,8 +7,18 @@ import SliderGroup from './slide-group';
 import sliderGroupData from '../data/slider-group';
 import YouTube from 'react-youtube';
 
+import axios from 'axios';
 
 export default class Page extends React.Component {
+
+	constructor() {
+		super()
+		this.state = {
+			dataLoaded: false,
+			error: false,
+			data: null
+		}
+	}
 
 	getContainerStyles() {
 		return {
@@ -18,6 +28,98 @@ export default class Page extends React.Component {
 			left: 0,
 			width: '100%',
 		}
+	}
+
+	csvJSON(csv){
+
+	  var lines=csv.split("\n");
+
+	  var result = [];
+
+	  var headers=lines[0].split(",");
+	  	// console.log(headers)
+
+	  for(var i=0;i<lines.length - 1;i++){
+
+		  var obj = {};
+		  var currentline=lines[i].split(",");
+
+		  for(var j=0;j<headers.length;j++){
+		  		if (j % 2 == 1) {
+			  		obj['rank'] = currentline[j];
+		  			
+		  		} else {
+			  		obj['email'] = currentline[j];
+
+		  		}
+		  }
+
+		  result.push(obj)
+
+	  }
+	  
+	  //return result; //JavaScript object
+	  // console.log(result)
+	  return result; //JSON
+	}
+
+	componentDidMount() {
+		axios.get('data.csv')
+		  .then((response) => {
+
+		    const jsData = this.csvJSON(response.data)
+		    // console.log(jsData);
+		  	this.setState({
+		  		dataLoaded: true,
+		  		data: this.csvJSON(response.data)
+		  	});
+		  	// console.log(this.refs.contest)
+		  })
+		  .catch((error) => {
+		  	// this.refs.contest.innerHTML('hi');
+		  	this.setState({
+		  		error: true
+		  	});
+		    console.log(error);
+		  });
+	}
+
+	replaceBetween(start, end, what,string) {
+    return string.substring(0, start) + what + string.substring(end);
+};
+
+	maskEmailString(string) {
+
+		let newString
+
+
+		newString = string
+		// console.log(newString.indexOf('@'))
+		// console.log(newString.indexOf('@') - 4)
+		// console.log(newString)
+
+		newString = this.replaceBetween(newString.indexOf('@') - 4,newString.indexOf('@'), '*****', string);
+
+
+		return newString
+	}
+
+	renderTopShoppers() {
+
+		if (this.state.dataLoaded && this.state.data) {
+			const elements = this.state.data.map((val,key)=>{
+				// console.log(val);
+				const email = val.email.replace(/\"/g, "")
+				const rank = val.rank.replace(/\"/g, "")
+				// console.log(val.rank.length.replace(/['"]+/g, ''))
+				return(<div key={key}>
+						{rank}: {this.maskEmailString(email)}
+					</div>)
+			});
+			return (elements)
+		}
+
+		return 'Loading...'
 	}
 
 
@@ -47,6 +149,30 @@ export default class Page extends React.Component {
 			arrows: false
 		}
 
+		const css = {
+			table: {
+				display: 'table',
+				height: '100%'
+			},
+			tableCell: {
+				display: 'table-cell',
+				verticalAlign: 'middle'
+			},
+			centerMode: {
+				height: '64%',
+				position:'absolute',
+				top: '28%',
+				padding: 8,
+				right: 0,
+				width: '43%',
+				marginRight: '2%',
+				fontSize: 9,
+				color: '#02286A',
+				background: '#f1f1f1',
+
+			}
+		}
+
 		return(
 			<div style={this.getContainerStyles()}>
 
@@ -57,7 +183,7 @@ export default class Page extends React.Component {
 
 					<img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470992945501-Master-blaster_06.jpg'} style={{width:'100%'}}/>
 
-					<div class='wrapper-master' style={{width: '100%'}}>
+					<div style={{width: '100%', position: 'relative'}}>
 						<div  style={{width: '50%', float: 'left'}}>
 						<img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470987292899-True-Blue_Pre-launch_04.jpg'} style={{width:'100%'}}/>
 						<a href="http://www.myntra.com/radium/terms/true-blue/index.html" target="_blanck"><img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470987716237-True-Blue_Pre-launch_08.jpg'} style={{width:'100%'}}/></a>
@@ -65,7 +191,11 @@ export default class Page extends React.Component {
 						</div>
 						<img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470987841138-True-Blue_Pre-launch_06.jpg'} style={{width: '46%', borderLeft: '2px solid #A5B3CA', marginLeft: 10}}/>
 
-							<p style={{ position:'absolute', top: '11.5%', padding: 8, right: 21, fontSize: 14, color: '#02286A'}}>Watch This Space</p>
+							<div style={css.centerMode}>
+								<div style={css.table}>
+									<div ref="contest" style={css.tableCell}>{this.renderTopShoppers()}</div>
+								</div>
+							</div>
 					</div>
 
 					
@@ -74,14 +204,14 @@ export default class Page extends React.Component {
 
 					<img src='http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470987716140-True-Blue_Pre-launch_10.jpg' style={{width:'100%'}}/>
 
-					<a href="http://www.myntra.com/indigo-trueblue" target="_blanck"><img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470985940359-True-Blue_Pre-launch_11.jpg'} style={{width:'100%'}}/></a>
-					<a href="http://www.myntra.com/natural-pastel-trueblue" target="_blanck"><img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470985940335-True-Blue_Pre-launch_12.jpg'} style={{width:'100%'}}/></a>
-					<a href="http://www.myntra.com/natural-grey-true-blue" target="_blanck"><img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470985940314-True-Blue_Pre-launch_15.jpg'} style={{width:'100%'}}/></a>
-					<a href="http://www.myntra.com/sptb" target="_blanck"><img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470985940291-True-Blue_Pre-launch_16.jpg'} style={{width:'100%'}}/></a>
+					<a href="http://www.myntra.com/indigo-trueblue" target="_blanck"><img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11471002559735-Indigo-'} style={{width:'100%'}}/></a>
+					<a href="http://www.myntra.com/natural-pastel-trueblue" target="_blanck"><img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11471002716320-Natural-Pastels.jpg'} style={{width:'100%'}}/></a>
+					<a href="http://www.myntra.com/natural-grey-true-blue" target="_blanck"><img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11471002559710-Natural-Greys-_02.jpg'} style={{width:'100%'}}/></a>
+					<a href="http://www.myntra.com/sptb" target="_blanck"><img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11471002559650-Spice.jpg'} style={{width:'100%'}}/></a>
 
-					<a href="http://www.myntra.com/jeweltone-trueblue" target="_blanck"><img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470985940273-True-Blue_Pre-launch_17.jpg'} style={{width:'100%'}}/></a>
+					<a href="http://www.myntra.com/jeweltone-trueblue" target="_blanck"><img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11471002559755-Geo-Jewels.jpg'} style={{width:'100%'}}/></a>
 
-					<a href="http://www.myntra.com/silvercoll-from-trueblue" target="_blanck"><img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470985940255-True-Blue_Pre-launch_18.jpg'} style={{width:'100%'}}/></a>
+					<a href="http://www.myntra.com/silvercoll-from-trueblue" target="_blanck"><img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11471002559679-Silvery-Filigree.jpg'} style={{width:'100%'}}/></a>
 
 
 
@@ -110,7 +240,7 @@ export default class Page extends React.Component {
 
 
 					<img src='http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470988206997-True-Blue_Pre-launch_36.jpg' style={{width:'100%', margin: '21px 0'}}/>
-					<img src='http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470987716077-True-Blue_Pre-launch_29.jpg' style={{width:'100%'}}/>
+					<img src='http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11471002559697-Sachin-quote.jpg' style={{width:'100%'}}/>
 						
 					
 					<img src='http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470988206997-True-Blue_Pre-launch_36.jpg' style={{width:'100%', margin: '21px 0 0'}}/>
@@ -131,7 +261,7 @@ export default class Page extends React.Component {
 					<img src='http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470987716038-True-Blue_Pre-launch_37.jpg' style={{width:'100%'}}/>
 
 
-					<div style={{marginBottom:25, position: 'absolute'}}><YouTube
+					<div style={{marginBottom:25}}><YouTube
 						videoId="ZxO4QdbCits"
 						opts={videoOptions}
 						

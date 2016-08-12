@@ -20,7 +20,10 @@
     "lodash": "^4.13.1",
     "normalize.css": "^4.1.1",
     "react": "~15.1.0",
-    "react-dom": "~15.1.0"
+    "react-dom": "~15.1.0",
+    "react-slick": "~0.12.3",
+    "axios": "~0.13.1",
+    "csv-parse": "~1.1.7"
   },
   "devDependencies": {
     "babel-loader": "~6.2.4",
