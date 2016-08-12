@@ -51,19 +51,19 @@ export default class Page extends React.Component {
 			<div style={this.getContainerStyles()}>
 
 				<div>
-					<div class='wrapper-class' style={{width: '100%'}}>
-						<img src="http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470986628657-LP_Top-banner_02.jpg" alt="true Blue" style={{width: '30%'}} />
-						<img src="http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470986628676-LP_Top-banner_03.jpg" alt="true Blue" style={{width: '30%'}} />
-						<img src="http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470986628704-LP_Top-banner_04.jpg" alt="true Blue" style={{width: '30%'}} />
+				<a href="http://www.myntra.com/true-blue-all" target="_blanck"><img src="http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470992778222-TB-LP_top-banner.jpg" alt="true Blue" style={{width: '100%'}} /></a>
+						
+						
 
-					</div>
-
-					<img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470987292958-True-Blue_Pre-launch_03.jpg'} style={{width:'100%'}}/>
+					<img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470992945501-Master-blaster_06.jpg'} style={{width:'100%'}}/>
 
 					<div class='wrapper-master' style={{width: '100%'}}>
-						<img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470987292899-True-Blue_Pre-launch_04.jpg'} style={{width:'50%'}}/>
+						<div  style={{width: '50%', float: 'left'}}>
+						<img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470987292899-True-Blue_Pre-launch_04.jpg'} style={{width:'100%'}}/>
+						<a href="http://www.myntra.com/radium/terms/true-blue/index.html" target="_blanck"><img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470987716237-True-Blue_Pre-launch_08.jpg'} style={{width:'100%'}}/></a>
 
-						<img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470987841138-True-Blue_Pre-launch_06.jpg'} style={{width:'50%'}}/>
+						</div>
+						<img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470987841138-True-Blue_Pre-launch_06.jpg'} style={{width: '46%', borderLeft: '2px solid #A5B3CA', marginLeft: 10}}/>
 					</div>
 
 					
@@ -72,14 +72,14 @@ export default class Page extends React.Component {
 
 					<img src='http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470987716140-True-Blue_Pre-launch_10.jpg' style={{width:'100%'}}/>
 
-					<img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470985940359-True-Blue_Pre-launch_11.jpg'} style={{width:'100%'}}/>
-					<img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470985940335-True-Blue_Pre-launch_12.jpg'} style={{width:'100%'}}/>
-					<img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470985940314-True-Blue_Pre-launch_15.jpg'} style={{width:'100%'}}/>
-					<img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470985940291-True-Blue_Pre-launch_16.jpg'} style={{width:'100%'}}/>
+					<a href="http://www.myntra.com/indigo-trueblue" target="_blanck"><img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470985940359-True-Blue_Pre-launch_11.jpg'} style={{width:'100%'}}/></a>
+					<a href="http://www.myntra.com/natural-pastel-trueblue" target="_blanck"><img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470985940335-True-Blue_Pre-launch_12.jpg'} style={{width:'100%'}}/></a>
+					<a href="http://www.myntra.com/natural-grey-true-blue" target="_blanck"><img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470985940314-True-Blue_Pre-launch_15.jpg'} style={{width:'100%'}}/></a>
+					<a href="http://www.myntra.com/sptb" target="_blanck"><img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470985940291-True-Blue_Pre-launch_16.jpg'} style={{width:'100%'}}/></a>
 
-					<img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470985940273-True-Blue_Pre-launch_17.jpg'} style={{width:'100%'}}/>
+					<a href="http://www.myntra.com/jeweltone-trueblue" target="_blanck"><img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470985940273-True-Blue_Pre-launch_17.jpg'} style={{width:'100%'}}/></a>
 
-					<img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470985940255-True-Blue_Pre-launch_18.jpg'} style={{width:'100%'}}/>
+					<a href="http://www.myntra.com/silvercoll-from-trueblue" target="_blanck"><img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470985940255-True-Blue_Pre-launch_18.jpg'} style={{width:'100%'}}/></a>
 
 
 
@@ -93,16 +93,16 @@ export default class Page extends React.Component {
 				
 
 					<div class='wrapper-cat' style={{width: '100%'}}>						
-						<img src="http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470986176855-True-Blue_Pre-launch_21.jpg" alt="true Blue" style={{width: '33.3%'}} />	
-						<img src="http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470986176835-True-Blue_Pre-launch_22.jpg" alt="true Blue" style={{width: '33.3%'}} />
-						<img src="http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470986176808-True-Blue_Pre-launch_23.jpg" alt="true Blue" style={{width: '33.3%'}} />
+						<a href="http://www.myntra.com/shirts-from-trueblue" target="_blanck"><img src="http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470986176855-True-Blue_Pre-launch_21.jpg" alt="true Blue" style={{width: '33.3%'}} /></a>	
+						<a href="http://www.myntra.com/tshirts-from-trueblue" target="_blanck"><img src="http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470986176835-True-Blue_Pre-launch_22.jpg" alt="true Blue" style={{width: '33.3%'}} /></a>
+						<a href="http://www.myntra.com/jacket-suit-blazer-trueblue" target="_blanck"><img src="http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470986176808-True-Blue_Pre-launch_23.jpg" alt="true Blue" style={{width: '33.3%'}} /></a>
 					</div>
 
 
 					<div class='wrapper-cat' style={{width: '100%'}}>						
-						<img src="http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470986176776-True-Blue_Pre-launch_24.jpg" alt="true Blue" style={{width: '33.3%'}} />
-						<img src="http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470986176743-True-Blue_Pre-launch_25.jpg" alt="true Blue" style={{width: '33.3%'}} />
-						<img src="http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470986176712-True-Blue_Pre-launch_26.jpg" alt="true Blue" style={{width: '33.3%'}} />
+						<a href="http://www.myntra.com/trousers-from-trueblue" target="_blanck"><img src="http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470986176776-True-Blue_Pre-launch_24.jpg" alt="true Blue" style={{width: '33.3%'}} /></a>
+						<a href="http://www.myntra.com/jeans-from-trueblue" target="_blanck"><img src="http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470986176743-True-Blue_Pre-launch_25.jpg" alt="true Blue" style={{width: '33.3%'}} /></a>
+						<a href="http://www.myntra.com/shorts-from-TrueBlue" target="_blanck"><img src="http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470986176712-True-Blue_Pre-launch_26.jpg" alt="true Blue" style={{width: '33.3%'}} /></a>
 					</div>					
 					<img src='http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470988206997-True-Blue_Pre-launch_36.jpg' style={{width:'100%', margin: '21px 0'}}/>
 					<img src='http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470987716077-True-Blue_Pre-launch_29.jpg' style={{width:'100%'}}/>
@@ -118,14 +118,19 @@ export default class Page extends React.Component {
 					<SliderGroup data={sliderGroupData}></SliderGroup>
 
 
+					<a href="http://www.myntra.com/true-blue-all" target="_blanck"><img src='http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470987716052-True-Blue_Pre-launch_34.jpg' style={{width:'100%',marginTop:30}}/></a>
+
+					
 					<img src='http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470988206997-True-Blue_Pre-launch_36.jpg' style={{width:'100%', margin: '31px 0 0'}}/>
+					
 					<img src='http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470987716038-True-Blue_Pre-launch_37.jpg' style={{width:'100%'}}/>
 
 
-					{<YouTube
+					<div style={{marginBottom:25}}><YouTube
 						videoId="ULXJvY8p6U0"
 						opts={videoOptions}
-						/>}
+						
+						/></div>
 
 				</div>
 				
