@@ -56,7 +56,7 @@ export default class SlideGroup extends React.Component {
 					<Slider {...settings}>
 							{this.createSlide(sliders.slides)}
 					</Slider>
-					<a href={'http://www.myntra.com/women-hairstyling?SRC=Radium'} target="_blank" 
+					{/*<a href={'http://www.myntra.com/women-hairstyling?SRC=Radium'} target="_blank" 
 					style={{textAlign:'center', 
 					backgroundColor: '#A8B5DF', 
 					textDecoration:'none',
@@ -67,7 +67,7 @@ export default class SlideGroup extends React.Component {
 					top: '-27px',
 					color:'#fff',
 					position:'relative' }}>
-					Try now</a>
+					Try now</a>*/}
 				</div>
 			);
 		});
