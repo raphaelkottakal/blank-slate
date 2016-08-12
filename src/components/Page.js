@@ -25,15 +25,15 @@ export default class Page extends React.Component {
 	render() {
 
 		// console.log('test', sliderGroupData);
-		// const videoOptions = {
-		// 	width:'100%',
-		// 	height:'auto',
-		// 	playerVars: {
-		// 	controls: 0,
-		// 	showinfo: 0,
-		// 	color: 'white',
-		//    // color: 'black'
-		// }
+		const videoOptions = {
+			width:'100%',
+			height:'auto',
+			playerVars: 0,
+			controls: 0,
+			showinfo: 0,
+			color: 'white',
+		   // color: 'black'
+		};
 
 		var settings = {
 			dots: true,
@@ -122,10 +122,10 @@ export default class Page extends React.Component {
 					<img src='http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470987716038-True-Blue_Pre-launch_37.jpg' style={{width:'100%'}}/>
 
 
-					{/*<YouTube
-						videoId="rZKo08a2ER8"
+					{<YouTube
+						videoId="ULXJvY8p6U0"
 						opts={videoOptions}
-						/>*/}
+						/>}
 
 				</div>
 				
