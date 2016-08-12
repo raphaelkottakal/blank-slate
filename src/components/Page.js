@@ -64,6 +64,8 @@ export default class Page extends React.Component {
 
 						</div>
 						<img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470987841138-True-Blue_Pre-launch_06.jpg'} style={{width: '46%', borderLeft: '2px solid #A5B3CA', marginLeft: 10}}/>
+
+							<p style={{ position:'absolute', top: '11.5%', padding: 8, right: 21, fontSize: 14, color: '#02286A'}}>Watch This Space</p>
 					</div>
 
 					
@@ -99,11 +101,14 @@ export default class Page extends React.Component {
 					</div>
 
 
-					<div class='wrapper-cat' style={{width: '100%'}}>						
+					{/*<div class='wrapper-cat' style={{width: '100%'}}>						
 						<a href="http://www.myntra.com/trousers-from-trueblue" target="_blanck"><img src="http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470986176776-True-Blue_Pre-launch_24.jpg" alt="true Blue" style={{width: '33.3%'}} /></a>
 						<a href="http://www.myntra.com/jeans-from-trueblue" target="_blanck"><img src="http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470986176743-True-Blue_Pre-launch_25.jpg" alt="true Blue" style={{width: '33.3%'}} /></a>
 						<a href="http://www.myntra.com/shorts-from-TrueBlue" target="_blanck"><img src="http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470986176712-True-Blue_Pre-launch_26.jpg" alt="true Blue" style={{width: '33.3%'}} /></a>
-					</div>					
+					</div>*/}	
+
+
+
 					<img src='http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470988206997-True-Blue_Pre-launch_36.jpg' style={{width:'100%', margin: '21px 0'}}/>
 					<img src='http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470987716077-True-Blue_Pre-launch_29.jpg' style={{width:'100%'}}/>
 						
@@ -126,8 +131,8 @@ export default class Page extends React.Component {
 					<img src='http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470987716038-True-Blue_Pre-launch_37.jpg' style={{width:'100%'}}/>
 
 
-					<div style={{marginBottom:25}}><YouTube
-						videoId="ULXJvY8p6U0"
+					<div style={{marginBottom:25, position: 'absolute'}}><YouTube
+						videoId="ZxO4QdbCits"
 						opts={videoOptions}
 						
 						/></div>
