@@ -231,11 +231,11 @@ export default class Page extends React.Component {
 					</div>
 
 
-					{/*<div class='wrapper-cat' style={{width: '100%'}}>						
+					<div class='wrapper-cat' style={{width: '100%'}}>						
 						<a href="http://www.myntra.com/trousers-from-trueblue" target="_blanck"><img src="http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470986176776-True-Blue_Pre-launch_24.jpg" alt="true Blue" style={{width: '33.3%'}} /></a>
 						<a href="http://www.myntra.com/jeans-from-trueblue" target="_blanck"><img src="http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470986176743-True-Blue_Pre-launch_25.jpg" alt="true Blue" style={{width: '33.3%'}} /></a>
 						<a href="http://www.myntra.com/shorts-from-TrueBlue" target="_blanck"><img src="http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470986176712-True-Blue_Pre-launch_26.jpg" alt="true Blue" style={{width: '33.3%'}} /></a>
-					</div>*/}	
+					</div>
 
 
 
