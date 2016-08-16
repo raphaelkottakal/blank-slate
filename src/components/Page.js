@@ -150,6 +150,10 @@ export default class Page extends React.Component {
 		}
 
 		const css = {
+			img: {
+				width: '100%',
+				height: 'auto'
+			},
 			table: {
 				display: 'table',
 				height: '100%'
@@ -177,8 +181,18 @@ export default class Page extends React.Component {
 			<div style={this.getContainerStyles()}>
 
 				<div>
-				<a href="http://www.myntra.com/true-blue-all" target="_blanck"><img src="http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470992778222-TB-LP_top-banner.jpg" alt="true Blue" style={{width: '100%'}} /></a>
-						
+					<div style={{display:'flex'}}>
+					<div style={{width:'36%'}}>
+						<a href={'http://www.myntra.com/true-blue-all'} target="_blank">
+							<img style={css.img} src="http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470991884655-TB-LP_top-banner-1.jpg" />
+						</a>
+					</div>	
+					<div style={{width:'63%'}}>
+						<a href={'http://www.myntra.com'} target="_blank">
+							<img style={css.img} src="http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470991884680-TB-LP_top-banner-2.jpg" />
+						</a>
+					</div>	
+				</div>	
 						
 
 					<img src={'http://assets.myntassets.com/assets/images/lookbook/2016/8/12/11470992945501-Master-blaster_06.jpg'} style={{width:'100%'}}/>
