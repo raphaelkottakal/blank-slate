@@ -80,7 +80,7 @@ export default class GifSlider extends React.Component {
 
 		if (this.state.imgsLoaded) {
 			return(
-					<img src={this.pickImg()} style ={{maxWidth: '100%'}} alt="Image1" />
+					<img src={this.pickImg()} style ={{maxWidth: '100%', display: 'block'}} alt="Image1" />
 			);	
 		} else {
 			return(
