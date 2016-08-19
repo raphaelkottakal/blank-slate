@@ -1,11 +1,30 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
+@font-face {
+	font-family: Gohtam;
+	font-weight: bold;
+	src: url("http://res.cloudinary.com/myntra-com/raw/upload/v1471606844/fonts/gotham/Gotham-Bold.otf") format("opentype");
+}
+
+@font-face {
+	font-family: Gohtam;
+	font-weight: normal;
+	src: url("http://res.cloudinary.com/myntra-com/raw/upload/v1471606844/fonts/gotham/Gotham-Medium.otf") format("opentype");
+}
+
+@font-face {
+	font-family: Gohtam;
+	font-weight: lighter;
+	src: url("http://res.cloudinary.com/myntra-com/raw/upload/v1471606844/fonts/gotham/Gotham-Light.otf") format("opentype");
+}
+
 
 html {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	font-family: 'Open Sans', sans-serif;
+	font-family: Gohtam, sans-serif;
+	font-weight: normal;
 }
 
 *, *:before, *:after {
