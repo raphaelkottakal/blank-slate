@@ -9,12 +9,27 @@ export default class GifSlider extends React.Component {
 	constructor() {
 		super();
 		this.state = {
+			firstImg: null,
+			firstImgLoaded: false,
 			imgsLoaded: false,
 			currentImgKey : 0
 		}
 	}
 
 	componentDidMount() {
+
+		let img = new Image();
+		img.src = this.props.imgs[0];
+		img.onload = () => {
+				this.setState({
+					firstImgLoaded: true,
+					firstImg: this.props.imgs[0]
+				});
+				this.loadAllframes();
+		}
+	}
+
+	loadAllframes() {
 
 		let counter = 0,
 			totalImgs = this.props.imgs.length;
@@ -80,8 +95,12 @@ export default class GifSlider extends React.Component {
 
 		if (this.state.imgsLoaded) {
 			return(
-					<img src={this.pickImg()} style ={{maxWidth: '100%', display: 'block'}} alt="Image1" />
+				<img src={this.pickImg()} style ={{maxWidth: '100%', display: 'block'}} alt="Image1" />
 			);	
+		} else if (this.state.firstImgLoaded) {
+			return(
+				<img src={this.state.firstImg} style ={{maxWidth: '100%', display: 'block'}} alt="Image1" />
+			);
 		} else {
 			return(
 				<div style={css.loading}>
