@@ -12,7 +12,7 @@ import Ga from '../functions/Ga';
 export default class Page extends React.Component {
 
 	handelShop(e) {
-		Ga({action: 'shop', label: e.target.href});
+		Ga({action: 'shop - ' + e.target.title, label: e.target.href});
 	}
 
 	render() {
@@ -139,7 +139,7 @@ export default class Page extends React.Component {
 						<hr style={css.hr} />
 						<div style={css.subTitle}>The snug fit</div>
 						<div style={css.content}>Usually fits well around your waist, hips and legs and tapers down towards the ankles.</div>
-						<a onClick={this.handelShop} style={css.shop} href="http://www.myntra.com/men-jeans-store?f=Fit_article_attr%3Askinny%2520fit%2Csuper%2520skinny%2520fit" target="_blank">Shop now</a>
+						<a onClick={this.handelShop} title="Skinny" style={css.shop} href="http://www.myntra.com/men-jeans-store?f=Fit_article_attr%3Askinny%2520fit%2Csuper%2520skinny%2520fit" target="_blank">Shop now</a>
 					</div>
 				</div>
 
@@ -150,7 +150,7 @@ export default class Page extends React.Component {
 						<hr style={_.assignIn({},css.hr,{margin: '0 0 0 auto'})} />
 						<div style={css.subTitle}>The narrow fit</div>
 						<div style={css.content}>These normally fit well around your hips and waist while the leg is slightly narrower than straight jeans and slightly broader than skinny jeans.</div>
-						<a onClick={this.handelShop} style={css.shop} href="http://www.myntra.com/men-jeans-store?f=Fit_article_attr%3Aslim%2520fit%2Ctapered" target="_blank">Shop now</a>
+						<a onClick={this.handelShop}  title="Slim" style={css.shop} href="http://www.myntra.com/men-jeans-store?f=Fit_article_attr%3Aslim%2520fit%2Ctapered" target="_blank">Shop now</a>
 					</div>
 					<div style={css.imageHalf}>
 						<GifSlider 
@@ -173,7 +173,7 @@ export default class Page extends React.Component {
 						<hr style={css.hr} />
 						<div style={css.subTitle}>The comfy fit</div>
 						<div style={css.content}>This good old classic style is the most comfortable and the width of the leg is proportionate between your knees and ankles.</div>
-						<a onClick={this.handelShop} style={css.shop} href="http://www.myntra.com/men-jeans-store?f=Fit_article_attr%3Aregular%2520fit" target="_blank">Shop now</a>
+						<a onClick={this.handelShop}  title="Straight" style={css.shop} href="http://www.myntra.com/men-jeans-store?f=Fit_article_attr%3Aregular%2520fit" target="_blank">Shop now</a>
 					</div>
 				</div>
 				
