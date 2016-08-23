@@ -154,8 +154,8 @@ export default class Page extends React.Component {
 						<div style={css.number}>01</div>
 						<div style={css.title}>Super<br/>skinny</div>
 						<hr style={css.hr} />
-						<div style={css.subTitle}>The snug fit</div>
-						<div style={css.content}>A slim fit through the hips and thighs with a super skinny leg.</div>
+						<div style={css.subTitle}>The skin fit</div>
+						<div style={css.content}>They’re very similar to skinny jeans in terms of the low-rise and snug fit around the seat and legs. The only difference is the super skinny leg that tapers down to the ankles.</div>
 						<a onClick={this.handelShop} title="Super skinny" style={css.shop} href="http://www.myntra.com/jeans?f=Fit_article_attr%3Asuper%2520skinny%2520fit%3A%3Agender%3Amen%2520women%2Cmen%2520women%2Cwomen" target="_blank">Shop now</a>
 					</div>
 				</div>
@@ -166,7 +166,7 @@ export default class Page extends React.Component {
 						<div style={css.title}>Skinny</div>
 						<hr style={_.assignIn({},css.hr,{margin: '0 0 0 auto'})} />
 						<div style={css.subTitle}>The snug fit</div>
-						<div style={css.content}>Usually fits well around your waist, hips and legs and tapers down towards the ankles.</div>
+						<div style={css.content}>These denims come with a low-rise and a fit that hugs your frame from the seat right down to the ankles.</div>
 						<a onClick={this.handelShop} title="Skinny" style={css.shop} href="http://www.myntra.com/jeans?f=Fit_article_attr%3Askinny%2520fit%3A%3Agender%3Amen%2520women%2Cmen%2520women%2Cmen%2520women%2Cmen%2520women%2Cwomen" target="_blank">Shop now</a>
 					</div>
 					<div style={css.imageHalf}>
@@ -189,7 +189,7 @@ export default class Page extends React.Component {
 						<div style={css.title}>Slim</div>
 						<hr style={css.hr} />
 						<div style={css.subTitle}>The narrow fit</div>
-						<div style={css.content}>These normally fit well around your hips and waist while the leg is slightly narrower than straight jeans and slightly broader than skinny jeans.</div>
+						<div style={css.content}>With a rise that’s between low to medium, these denims are similar to the skinny fit with minor differences. They’re fitted through the seat and thighs with a slightly tapered leg that narrows out again as it reaches your ankles.</div>
 						<a onClick={this.handelShop} title="Slim" style={css.shop} href="http://www.myntra.com/jeans?f=Fit_article_attr%3Aslim%2520fit%3A%3Agender%3Amen%2520women%2Cmen%2520women%2Cmen%2520women%2Cmen%2520women%2Cmen%2520women%2Cmen%2520women%2Cwomen" target="_blank">Shop now</a>
 					</div>
 				</div>
@@ -200,7 +200,7 @@ export default class Page extends React.Component {
 						<div style={_.assignIn( {}, css.title, {fontSize: 20})}>Straight</div>
 						<hr style={_.assignIn({},css.hr,{margin: '0 0 0 auto'})} />
 						<div style={css.subTitle}>The comfy fit</div>
-						<div style={css.content}>This good old classic style is the most comfortable and the width of the leg is proportionate between your knees and ankles.</div>
+						<div style={css.content}>This good old classic style comes with a high-rise and is the most comfortable of all. The width of the leg is proportionate between your knees and ankles.</div>
 						<a onClick={this.handelShop} title="Straight" style={css.shop} href="http://www.myntra.com/jeans?f=Fit_article_attr%3Aregular%2520fit%3A%3Agender%3Amen%2520women%2Cmen%2520women%2Cwomen" target="_blank">Shop now</a>
 					</div>
 					<div style={css.imageHalf}>
@@ -223,7 +223,7 @@ export default class Page extends React.Component {
 						<div style={_.assignIn( {}, css.title,{fontSize: 20})}>Flared &amp;<br/>bootcut</div>
 						<hr style={css.hr} />
 						<div style={css.subTitle}>The flare fit</div>
-						<div style={css.content}>This style fits well around the hips and flare out below the knees right down to the ankles.</div>
+						<div style={css.content}>This style comes with a mid to high-rise. It is generally fitted around the hips and flare out below the knees right down to the ankles.</div>
 						<a onClick={this.handelShop} title="Flared" style={css.shop} href="http://www.myntra.com/jeans?f=Fit_article_attr%3Abootcut%3A%3Agender%3Amen%2520women%2Cmen%2520women%2Cmen%2520women%2Cmen%2520women%2Cmen%2520women%2Cmen%2520women%2Cwomen" target="_blank">Shop now</a>
 					</div>
 				</div>
@@ -234,7 +234,7 @@ export default class Page extends React.Component {
 						<div style={_.assignIn( {}, css.title,{fontSize: 20})}>Jeggings</div>
 						<hr style={_.assignIn({},css.hr,{margin: '0 0 0 auto'})} />
 						<div style={css.subTitle}>The<br/>shin-tight fit</div>
-						<div style={css.content}>These fit like leggings, but look like jeans. They are figure-hugging but comfortable  because of their elasticity.</div>
+						<div style={css.content}>These fit like leggings, but look like jeans. They come with a mid-rise and are figure-hugging but comfortable because of their elasticity.</div>
 						<a onClick={this.handelShop} title="Jeggings" style={css.shop} href="http://www.myntra.com/jeggings" target="_blank">Shop now</a>
 					</div>
 					<div style={css.imageHalf}>
