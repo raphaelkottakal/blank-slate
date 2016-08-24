@@ -155,7 +155,7 @@ export default class Page extends React.Component {
 						<div style={css.title}>Super<br/>skinny</div>
 						<hr style={css.hr} />
 						<div style={css.subTitle}>The skin fit</div>
-						<div style={css.content}>They’re very similar to skinny jeans in terms of the low-rise and snug fit around the seat and legs. The only difference is the super skinny leg that tapers down to the ankles.</div>
+						<div style={css.content}>They're like skinny jeans with a low-rise and snug fit around the seat but they have a super skinny leg that tapers down to the ankles.</div>
 						<a onClick={this.handelShop} title="Super skinny" style={css.shop} href="http://www.myntra.com/jeans?f=Fit_article_attr%3Asuper%2520skinny%2520fit%3A%3Agender%3Amen%2520women%2Cmen%2520women%2Cwomen" target="_blank">Shop now</a>
 					</div>
 				</div>
@@ -189,7 +189,7 @@ export default class Page extends React.Component {
 						<div style={css.title}>Slim</div>
 						<hr style={css.hr} />
 						<div style={css.subTitle}>The narrow fit</div>
-						<div style={css.content}>With a rise that’s between low to medium, these denims are similar to the skinny fit with minor differences. They’re fitted through the seat and thighs with a slightly tapered leg that narrows out again as it reaches your ankles.</div>
+						<div style={css.content}>A low to mid-rise, these are fitted through the seat and thighs with a slightly tapered leg that narrows out again as it reaches your ankles.</div>
 						<a onClick={this.handelShop} title="Slim" style={css.shop} href="http://www.myntra.com/jeans?f=Fit_article_attr%3Aslim%2520fit%3A%3Agender%3Amen%2520women%2Cmen%2520women%2Cmen%2520women%2Cmen%2520women%2Cmen%2520women%2Cmen%2520women%2Cwomen" target="_blank">Shop now</a>
 					</div>
 				</div>
@@ -200,7 +200,7 @@ export default class Page extends React.Component {
 						<div style={_.assignIn( {}, css.title, {fontSize: 20})}>Straight</div>
 						<hr style={_.assignIn({},css.hr,{margin: '0 0 0 auto'})} />
 						<div style={css.subTitle}>The comfy fit</div>
-						<div style={css.content}>This good old classic style comes with a high-rise and is the most comfortable of all. The width of the leg is proportionate between your knees and ankles.</div>
+						<div style={css.content}>This good old classic style has a high-rise and the width of the leg is proportionate between your knees and ankles.</div>
 						<a onClick={this.handelShop} title="Straight" style={css.shop} href="http://www.myntra.com/jeans?f=Fit_article_attr%3Aregular%2520fit%3A%3Agender%3Amen%2520women%2Cmen%2520women%2Cwomen" target="_blank">Shop now</a>
 					</div>
 					<div style={css.imageHalf}>
