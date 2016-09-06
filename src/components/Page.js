@@ -49,9 +49,10 @@ export default class Page extends React.Component {
 				"http://assets.myntassets.com/assets/images/lookbook/denim-women/2016/8/19/11471616117910-myntra-joy-datta-23911-A.jpg",
 			],
 			jeggings: [
-				"http://assets.myntassets.com/assets/images/lookbook/denim-women/2016/8/19/11471616274794-myntra-joy-datta-24072-A.jpg",
-				"http://assets.myntassets.com/assets/images/lookbook/denim-women/2016/8/19/11471616274771-myntra-joy-datta-24078-A.jpg",
-				"http://assets.myntassets.com/assets/images/lookbook/denim-women/2016/8/19/11471616274760-myntra-joy-datta-24096-A.jpg",
+				"http://assets.myntassets.com/v1473152034/radium/myntra-joy-datta-23672-A.jpg",
+				"http://assets.myntassets.com/v1473152034/radium/myntra-joy-datta-23677-A.jpg",
+				"http://assets.myntassets.com/v1473152034/radium/myntra-joy-datta-23666-A.jpg",
+				"http://assets.myntassets.com/v1473152034/radium/myntra-joy-datta-23653-A.jpg",
 			]
 		}
 
