@@ -19,3 +19,8 @@ html {
   display: table;
   clear: both;
 }
+
+img{
+	width: 100%;
+	display: block
+}
