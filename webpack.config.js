@@ -31,7 +31,7 @@ module.exports = {
         loaders: ['react-hot', 'babel?presets[]=react,presets[]=es2015']
       },
       { test: /\.html$/, loader: 'file?name=[name].[ext]' },
-      { test: /\.css$/, loader: "style-loader!css-loader" }
+      { test: /\.css$/, loader: "style-loader!css-loader" },
       { test: /\.json$/, loader: "json" }
     ]
   },
