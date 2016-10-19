@@ -12,29 +12,31 @@ import Ga from '../functions/Ga';
 export default class Page extends React.Component {
 
 	handelShop(e) {
-		Ga({action: 'shop - ' + e.target.title, label: e.target.href});
+		const title = e.target.closest('a').title;
+		const href = e.target.closest('a').href;
+		Ga({action: 'shop - ' + title, label: href});
 	}
 
 	render() {
 
 		const imgs = {
 			skinny: [
-				"http://assets.myntassets.com/assets/images/lookbook/denim-men/2016/8/19/11471612915396-Myntra-Joy-Datta1553-A.jpg",
-				"http://assets.myntassets.com/assets/images/lookbook/denim-men/2016/8/19/11471612915385-Myntra-Joy-Datta1557-A.jpg",
-				"http://assets.myntassets.com/assets/images/lookbook/denim-men/2016/8/19/11471612915374-Myntra-Joy-Datta1584-A.jpg",
-				"http://assets.myntassets.com/assets/images/lookbook/denim-men/2016/8/19/11471612915364-Myntra-Joy-Datta1605-A.jpg",
+				"http://assets.myntassets.com/v1476877017/radium/fit-men/men-final-fit-guide-denim-1_02.jpg",
+				"http://assets.myntassets.com/v1476877017/radium/fit-men/men-final-fit-guide-denim2_02.jpg",
+				"http://assets.myntassets.com/v1476877017/radium/fit-men/men-final-fit-guide-denim3_02.jpg",
+				"http://assets.myntassets.com/v1476877017/radium/fit-men/men-final-fit-guide-denim4_02.jpg",
 			],
 			slim: [
-				"http://assets.myntassets.com/assets/images/lookbook/denim-men/2016/8/19/11471614339785-Myntra-Joy-Datta1662-A.jpg",
-				"http://assets.myntassets.com/assets/images/lookbook/denim-men/2016/8/19/11471614339809-Myntra-Joy-Datta1657-A.jpg",
-				"http://assets.myntassets.com/assets/images/lookbook/denim-men/2016/8/19/11471614339836-Myntra-Joy-Datta1648-A.jpg",
-				"http://assets.myntassets.com/assets/images/lookbook/denim-men/2016/8/19/11471614339853-Myntra-Joy-Datta1644-A.jpg",
+				"http://assets.myntassets.com/v1476877649/radium/fit-men/men-final-fit-guide-denim-1_04.jpg",
+				"http://assets.myntassets.com/v1476877648/radium/fit-men/men-final-fit-guide-denim2_04.jpg",
+				"http://assets.myntassets.com/v1476877650/radium/fit-men/men-final-fit-guide-denim3_04.jpg",
+				"http://assets.myntassets.com/v1476877649/radium/fit-men/men-final-fit-guide-denim4_04.jpg",
 			],
 			straight: [
-				"http://assets.myntassets.com/assets/images/lookbook/denim-men/2016/8/19/11471614428907-Myntra-Joy-Datta1620-A.jpg",
-				"http://assets.myntassets.com/assets/images/lookbook/denim-men/2016/8/19/11471614428892-Myntra-Joy-Datta1633-A.jpg",
-				"http://assets.myntassets.com/assets/images/lookbook/denim-men/2016/8/19/11471614428877-Myntra-Joy-Datta1639-A.jpg",
-				"http://assets.myntassets.com/assets/images/lookbook/denim-men/2016/8/19/11471614428923-Myntra-Joy-Datta1618-A.jpg",
+				"http://assets.myntassets.com/v1476877867/radium/fit-men/men-final-fit-guide-denim-1_06.jpg",
+				"http://assets.myntassets.com/v1476877869/radium/fit-men/men-final-fit-guide-denim2_06.jpg",
+				"http://assets.myntassets.com/v1476877867/radium/fit-men/men-final-fit-guide-denim3_06.jpg",
+				"http://assets.myntassets.com/v1476877867/radium/fit-men/men-final-fit-guide-denim4_06.jpg",
 			]
 		}
 
@@ -127,54 +129,30 @@ export default class Page extends React.Component {
 				<div style={css.mainTitleTwo}>Pair</div>
 
 				<div className="group">
-					<div style={css.imageHalf}>
+					<a onClick={this.handelShop} title="Skinny" href="http://www.myntra.com/men-jeans-store?f=Fit_article_attr%3Askinny%2520fit%2Csuper%2520skinny%2520fit" target="_blank">
 						<GifSlider 
 							imgs = {imgs.skinny}
 							timer = {1500}
 						/>
-					</div>
-					<div style={_.assignIn({}, css.textHalf, {paddingLeft: 8})}>
-						<div style={css.number}>01</div>
-						<div style={css.title}>Skinny</div>
-						<hr style={css.hr} />
-						<div style={css.subTitle}>The snug fit</div>
-						<div style={css.content}>These denims come with a low-rise and a fit that hugs your frame from the seat right down to the ankles.</div>
-						<a onClick={this.handelShop} title="Skinny" style={css.shop} href="http://www.myntra.com/men-jeans-store?f=Fit_article_attr%3Askinny%2520fit%2Csuper%2520skinny%2520fit" target="_blank">Shop now</a>
-					</div>
+					</a>
 				</div>
 
 				<div className="group">
-					<div style={_.assignIn({},css.textHalf,{textAlign: 'right', paddingRight: 8})}>
-						<div style={css.number}>02</div>
-						<div style={css.title}>Slim</div>
-						<hr style={_.assignIn({},css.hr,{margin: '0 0 0 auto'})} />
-						<div style={css.subTitle}>The narrow fit</div>
-						<div style={css.content}>A low to mid-rise, these are fitted through the seat and thighs with a slightly tapered leg that narrows out again as it reaches your ankles.</div>
-						<a onClick={this.handelShop}  title="Slim" style={css.shop} href="http://www.myntra.com/men-jeans-store?f=Fit_article_attr%3Aslim%2520fit%2Ctapered" target="_blank">Shop now</a>
-					</div>
-					<div style={css.imageHalf}>
+					<a onClick={this.handelShop} title="Slim" href="http://www.myntra.com/men-jeans-store?f=Fit_article_attr%3Aslim%2520fit%2Ctapered" target="_blank">
 						<GifSlider 
 							imgs = {imgs.slim}
 							timer = {1500}
 						/>
-					</div>
+					</a>
 				</div>
 
 				<div className="group">
-					<div style={css.imageHalf}>
+					<a onClick={this.handelShop} title="Straight" href="http://www.myntra.com/men-jeans-store?f=Fit_article_attr%3Aregular%2520fit" target="_blank">
 						<GifSlider 
 							imgs = {imgs.straight}
 							timer = {1500}
 						/>
-					</div>
-					<div style={_.assignIn({}, css.textHalf, {paddingLeft: 8})}>
-						<div style={css.number}>03</div>
-						<div style={_.assignIn( {}, css.title, {fontSize: 20})}>Straight</div>
-						<hr style={css.hr} />
-						<div style={css.subTitle}>The comfy fit</div>
-						<div style={css.content}>This good old classic style has a high-rise and the width of the leg is proportionate between your knees and ankles.</div>
-						<a onClick={this.handelShop}  title="Straight" style={css.shop} href="http://www.myntra.com/men-jeans-store?f=Fit_article_attr%3Aregular%2520fit" target="_blank">Shop now</a>
-					</div>
+					</a>
 				</div>
 				
 			</div>			

@@ -52,6 +52,10 @@ html {
   clear: both;
 }
 
+.group {
+	margin-bottom: 10px
+}
+
 .group:after {
   content: "";
   display: table;
