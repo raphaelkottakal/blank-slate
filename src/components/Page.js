@@ -139,9 +139,6 @@ export default class Page extends React.Component {
 
 		return(
 			<div>
-
-				<div style={css.mainTitleOne}>find your perfect</div>
-				<div style={css.mainTitleTwo}>Pair</div>
 				<img src = {'http://assets.myntassets.com/v1476955360/radium/fit-women/women-final-fit-guide-1_01.jpg'} style={{width:'100%'}} />
 				<div className="group">
 					<div style={css.imageHalf}>
